@@ -1,6 +1,7 @@
 ---
 title: ""
 description: ""
+aliases: []  # vendor names and shorthand that route here
 type: ""  # vendor | diy | status-quo | adjacent
 tier: ""  # primary | secondary | emerging
 category_overlap: []
@@ -56,53 +57,39 @@ A structured comparison across the dimensions that matter in competitive evaluat
 |-----------|------|----|-----------|
 |           |      |    |           |]
 
-### Strengths
+### Strengths & Weaknesses
 
 [Instructions:
-What this alternative does well. Be specific and honest — vague praise isn't useful. Focus on capabilities, market position, or execution advantages that actually affect deal outcomes.]
+What this alternative does well and where it falls short. Same standard for both — specific, verifiable, observed in real evaluations. Focus on capabilities, market position, or execution advantages and gaps that actually affect deal outcomes.]
 
 [Tips:
-- Every strength should be something you've seen matter in a real deal or evaluation
-- If you can't name a specific scenario where this strength hurt you, it might not be a real strength]
-
-[Format:
-Bulleted list — each strength should be one specific, verifiable claim]
-
-### Weaknesses
-
-[Instructions:
-Where this alternative falls short. Same standard — specific, verifiable, observed in real evaluations.]
-
-[Tips:
+- Every strength should be something you've seen matter in a real deal or evaluation — if you can't name a specific scenario where it hurt you, it might not be a real strength
 - Weaknesses you can't prove are opinions, not ammunition
 - Focus on structural weaknesses (architecture limitations, missing capabilities, slow innovation) over temporary ones (recent outage, bad quarter)]
 
 [Format:
-Bulleted list — each weakness should be one specific, verifiable claim]
+**Strengths**
+- [one specific, verifiable claim]
 
-### How We Win
+**Weaknesses**
+- [one specific, verifiable claim]]
+
+### Win Dynamics
 
 [Instructions:
-The scenarios, evaluation criteria, and buyer conditions where we consistently beat this alternative. These are the deals you want — the conditions to optimize for in targeting and messaging.]
+The scenarios, evaluation criteria, and buyer conditions where we consistently beat this alternative — and where they consistently beat us. The wins are the conditions to optimize for in targeting and messaging. The losses are the deals to avoid or develop specific plays to counter.]
 
 [Tips:
 - Be specific about the conditions — "we win in enterprise" is too broad; "we win in enterprise deals where the buyer has 3+ existing security tools and is consolidating" is actionable
-- Connect winning scenarios to specific differentiators]
+- Connect winning scenarios to specific differentiators
+- If you don't know when they win, your competitive intelligence is incomplete — knowing where you lose is more strategically valuable than knowing where you win]
 
 [Format:
-Bulleted list of scenarios with conditions and the differentiator or advantage that drives the win]
+**How we win**
+- [scenario with conditions and the differentiator or advantage that drives the win]
 
-### When They Win
-
-[Instructions:
-The scenarios where this alternative consistently beats you. Be honest — these are the deals you should either avoid or develop specific plays to counter.]
-
-[Tips:
-- If you don't know when they win, your competitive intelligence is incomplete
-- Knowing where you lose is more strategically valuable than knowing where you win]
-
-[Format:
-Bulleted list of scenarios with conditions and the specific advantage they hold]
+**When they win**
+- [scenario with conditions and the specific advantage they hold]]
 
 ### Win/Loss Patterns
 
@@ -166,7 +153,7 @@ For each vendor:
 [Instructions:
 3-5 rules for how this profile's voice and narrative should be applied — interpretations, constraints, and strategic choices unique to your company.]
 
-[Tips: 
+[Tips:
 Favor rules that change what an agent produces — what to lead with, what to avoid leading with, which claims are off-limits, and what to defer to when sources conflict.]
 
 [Format:

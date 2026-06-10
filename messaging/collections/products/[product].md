@@ -1,6 +1,7 @@
 ---
 title: ""
 description: ""
+aliases: []  # alternate or former product names that route here
 type: ""  # platform | product | module | add-on | service
 parent: ""  # slug of parent product, if module or add-on (optional)
 status: ""  # ga | beta | planned | deprecated
@@ -108,6 +109,10 @@ Numbered list of 3-5 messages]
 [Instructions:
 Which personas this product is relevant to and why. "Why It Matters" should capture what this specific product means to this specific persona — not the general value proposition, but the product-level relevance.]
 
+[Tips:
+- Only list personas with a real stake in this product — a persona that merely tolerates it doesn't belong here
+- "Why It Matters" should be specific enough to open a conversation with that persona about this product]
+
 [Format:
 | Persona | File | Why It Matters |
 |---------|------|----------------|
@@ -130,7 +135,7 @@ Bulleted list of proof points, each with source or attribution]
 [Instructions:
 3-5 rules for how this profile's voice and narrative should be applied — interpretations, constraints, and strategic choices unique to your company.]
 
-[Tips: 
+[Tips:
 Favor rules that change what an agent produces — what to lead with, what to avoid leading with, which claims are off-limits, and what to defer to when sources conflict.]
 
 [Format:

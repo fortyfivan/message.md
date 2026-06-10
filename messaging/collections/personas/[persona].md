@@ -1,6 +1,7 @@
 ---
 title: ""
 description: ""
+aliases: []  # alternate names/titles that route here, e.g. "CISO", "Head of InfoSec"
 type: ""  # buyer | user | champion | blocker
 seniority: ""  # executive | director | manager | practitioner | developer
 priority: ""  # primary | secondary | tertiary
@@ -16,46 +17,23 @@ This profile defines how to message to this persona — their responsibilities, 
 ### Role Description
 
 [Instructions:
-Define who this person is in the organization and in the buying process. Job titles should include common variants. Responsibilities should focus on what they own, influence, and are accountable for — the things that create pressure and buying motivation.]
+Define who this person is in the organization and in the buying process. Job titles should include common variants. Responsibilities should focus on what they own, influence, and are accountable for — the things that create pressure and buying motivation. Include the challenges your solution addresses for them, how they measure success, and the signals indicating they're motivated to act.]
 
 [Tips:
 - Job titles vary by company — list 3-5 common variants
-- Responsibilities should map to pain points — if a responsibility doesn't connect to a challenge your solution addresses, it's noise]
-
-[Format:
-- **Department:** [functional area — e.g., Security, Engineering, IT Operations]
-
-**Job Titles**
-[Relevant title variants]
-
-**Role in Buying Process**
-[Executive Buyer, Buyer, Champion, Influencer, Detractor]
-
-**Role in Product**
-[Owner, Administrator, End User, Observer]
-
-**Responsibilities**
-[What this persona owns, influences, and is accountable for]]
-
-### Relationship to Product
-
-[Instructions:
-Define the signals that indicate this persona is active and motivated, the challenges your solution addresses for them, and how they measure success. Signals should be persona-specific behaviors, not company-level ICP signals.]
-
-[Tips:
-- Challenges should expand on the frontmatter pain_points — the narrative behind the pain
+- Responsibilities should map to pain points — if a responsibility doesn't connect to a challenge your solution addresses, it's noise
 - Success metrics should be things this persona actually tracks, not aspirational KPIs
 - Signals should indicate this specific person is engaged, not just that their company fits]
 
 [Format:
-**Relevant Signals**
-[Conditions, behaviors, or patterns indicating this persona is motivated to act]
-
-**Challenges**
-[Challenges that create urgency, that the solution addresses, and that drive buying behavior]
-
-**Success Metrics**
-[How they measure success — KPIs they own and report on]]
+- **Department:** [functional area — e.g., Security, Engineering, IT Operations]
+- **Job Titles:** [Relevant title variants]
+- **Role in Buying Process:** [Executive Buyer, Buyer, Champion, Influencer, Detractor]
+- **Role in Product:** [Owner, Administrator, End User, Observer]
+- **Responsibilities:** [What this persona owns, influences, and is accountable for]
+- **Challenges:** [Challenges that create urgency, that the solution addresses, and that drive buying behavior]
+- **Success Metrics:** [How they measure success — KPIs they own and report on]
+- **Relevant Signals:** [Conditions, behaviors, or patterns indicating this persona is motivated to act]]
 
 ### Messaging Guidance
 
@@ -100,14 +78,9 @@ What this persona needs to advocate for your solution internally. This is especi
 - Materials should be things they can forward without editing — one-pagers, ROI summaries, comparison tables]
 
 [Format:
-**How they sell internally**
-[The framing and language they use when advocating to their stakeholders]
-
-**Materials they need**
-[Specific content assets that arm them — one-pagers, ROI summaries, executive briefs, comparison tables]
-
-**Arguments that work**
-[The specific points that resonate with the people they're trying to convince]]
+- **How they sell internally:** [The framing and language they use when advocating to their stakeholders]
+- **Materials they need:** [Specific content assets that arm them — one-pagers, ROI summaries, executive briefs, comparison tables]
+- **Arguments that work:** [The specific points that resonate with the people they're trying to convince]]
 
 ### Objections
 
@@ -129,7 +102,7 @@ For each objection:
 [Instructions:
 3-5 rules for how this profile's voice and narrative should be applied — interpretations, constraints, and strategic choices unique to your company.]
 
-[Tips: 
+[Tips:
 Favor rules that change what an agent produces — what to lead with, what to avoid leading with, which claims are off-limits, and what to defer to when sources conflict.]
 
 [Format:

@@ -1,6 +1,7 @@
 ---
 title: ""
 description: ""
+aliases: []  # alternate category names/abbreviations that route here
 related_categories: []
 updated: ""
 ---
@@ -118,7 +119,7 @@ Related categories that are converging, competing, or complementary. Reference c
 [Instructions:
 3-5 rules for how this profile's voice and narrative should be applied — interpretations, constraints, and strategic choices unique to your company.]
 
-[Tips: 
+[Tips:
 Favor rules that change what an agent produces — what to lead with, what to avoid leading with, which claims are off-limits, and what to defer to when sources conflict.]
 
 [Format:

@@ -15,34 +15,38 @@ This pillar defines who the company sells to and how it communicates to them —
 
 #### Characteristics
 
-- **Company type**: [Instructions: Shape of companies we sell to]
-- **Size band**: [Instructions: Range with sweet spot]
-- **Growth stage**: [Instructions: Scale-up / enterprise / mature]
-- **Verticals**: [Instructions: Industries served]
-- **Geographies**: [Instructions: Regions served]
-- **Initiatives**: [Instructions: Funded projects]
+[Instructions: Describe the firmographic shape of accounts that fit. Set each field; drop fields that don't apply.]
+
+- **Company type**:  [Shape of companies we sell to]
+- **Size band**:     [Range with sweet spot]
+- **Growth stage**:  [Scale-up / enterprise / mature]
+- **Verticals**:     [Industries served]
+- **Geographies**:   [Regions served]
+- **Initiatives**:   [Funded projects]
 
 #### Behaviors
 
-- **Buying behavior**: [Instructions: Process pattern — committee, single buyer, PLG, sales-led, hybrid.]
-- **Methodology**: [Instructions: How the buyer's team works — agile, DevOps, waterfall, mixed.]
-- **Tech maturity**: [Instructions: How they adopt technology — bleeding-edge, fast-follower, conservative.]
-- **Cultural fit**: [Instructions: What the buyer values.]
-- **Anti-fit**: [Instructions: Cultures we don't sell to. Directive.]
+[Instructions: Describe how good-fit buyers operate and decide. Anti-fit is directive — name the cultures we don't sell to.]
+
+- **Buying behavior**: [Process pattern — committee, single buyer, PLG, sales-led, hybrid]
+- **Methodology**:     [How the buyer's team works — agile, DevOps, waterfall, mixed]
+- **Tech maturity**:   [How they adopt technology — bleeding-edge, fast-follower, conservative]
+- **Cultural fit**:    [What the buyer values]
+- **Anti-fit**:        [Cultures we don't sell to]
 
 #### Environmental
 
-- **Existing tooling**: [Instructions: Tools the buyer already has — affects integration messaging.]
-- **Regulatory pressures**: [Instructions: Compliance frameworks or regulatory requirements they operate under. Skip if not relevant.]
-- **Industry pressures**: [Instructions: Macro forces affecting their business — consolidation, tech shifts, M&A, talent dynamics.]
+[Instructions: Capture the external conditions that shape the buyer's context and messaging needs. Skip fields that aren't relevant.]
+
+- **Existing tooling**:      [Tools the buyer already has — affects integration messaging]
+- **Regulatory pressures**:  [Compliance frameworks or regulatory requirements they operate under]
+- **Industry pressures**:    [Macro forces affecting their business — consolidation, tech shifts, M&A, talent dynamics]
 
 
 ### Buying Considerations
 
 [Instructions:
-Capture the cross-functional dynamics that shape how messaging needs to land across a buying group. This is the messaging considerations that emerge when the conversation goes cross-functional, and the patterns that guide how messaging supports the deal beyond the first conversation.]
-
-[Cover:
+Capture the cross-functional dynamics that shape how messaging needs to land across a buying group. This is the messaging considerations that emerge when the conversation goes cross-functional, and the patterns that guide how messaging supports the deal beyond the first conversation. Cover:
 - **Cross-functional dynamics** — How to message when champions, evaluators, and approvers each need different framing of the same value. What stays consistent across the group, and what flexes per role.
 - **Champion enablement** — What the internal champion needs to win the deal: proof points, objection handling, ROI framing, and the "armor" that holds up when they're not in the room.
 - **Common consensus blockers** — Recurring objections that surface when a deal goes wide (security, procurement, finance, legal, IT), and how messaging should preempt them.
@@ -104,7 +108,7 @@ List segments that carry particular messaging considerations. Only create segmen
 [Instructions:
 3-5 rules for how this pillar's voice and narrative should be applied — interpretation calls, constraints, and strategic choices unique to this company.]
 
-[Tips: 
+[Tips:
 Favor rules that change what an agent produces — what to lead with, what to avoid leading with, which claims are off-limits, and what to defer to when sources conflict.]
 
 [Format:

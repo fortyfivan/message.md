@@ -43,7 +43,7 @@ Other keys: `title` (title-slide headline at the persona's altitude — no produ
 
 Catalog of variants this asset supports. Files live in `variants/[slug].md`.
 
-[Instructions: Populate one row per variant]
+[Instructions: Populate one row per file in `variants/` when authoring — agents treat this table as the authoritative variant index]
 
 | Variant | File | Description |
 |---------|------|-------------|

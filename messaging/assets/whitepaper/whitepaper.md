@@ -31,7 +31,7 @@ Document gated-PDF + landing page schema. `download_cta_label`/`download_cta_url
 
 Catalog of variants this asset supports. Files live in `variants/[slug].md`.
 
-[Instructions: Populate one row per variant]
+[Instructions: Populate one row per file in `variants/` when authoring — agents treat this table as the authoritative variant index]
 
 | Variant | File | Description |
 |---------|------|-------------|

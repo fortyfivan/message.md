@@ -74,7 +74,7 @@ Document repeatable, outcome-oriented solutions. Solutions may span multiple pro
 [Instructions:
 3-5 rules for how this pillar's voice and narrative should be applied — interpretation calls, constraints, and strategic choices unique to this company.]
 
-[Tips: 
+[Tips:
 Favor rules that change what an agent produces — what to lead with, what to avoid leading with, which claims are off-limits, and what to defer to when sources conflict.]
 
 [Format:

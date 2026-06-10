@@ -1,6 +1,6 @@
 ---
 company: [Instructions: Company name. Use official capitalization.]
-version: [Instructions: ISO date, YYYY.MM.DD. Update on meaningful revisions.]
+version: [Instructions: ISO date, YYYY-MM-DD. Update on meaningful revisions.]
 maintained-by: [Instructions: Owning team, e.g., "marketing".]
 last-reviewed: [Instructions: ISO date, YYYY-MM-DD.]
 ---
@@ -63,9 +63,20 @@ Aim for 10-20 entries. More than 30 usually means the glossary is duplicating co
 
 ---
 
+## Brand Guardrails
+
+*Absolute constraints that apply to every output. These are hard gates, not style preferences.*
+
+[Instructions: List the constraints that no generated content may violate — banned phrases and claims, legal and compliance rules, trademark and naming rules, things never said about competitors or customers. Keep to 5-15 entries. Style and voice preferences belong in `pillars/profile.md`; only absolutes live here.]
+
+[Format:
+- **[Guardrail]** — [The rule, stated as a testable constraint, with the replacement or correct behavior where one exists.]]
+
+---
+
 ## Scenarios
 
-*Vocabulary for runtime messaging assembly. Agents infer the scenario of each session by combining dimensional values, and uses them to set altitude for each task.*
+*Vocabulary for runtime messaging assembly. Agents infer the scenario of each session by combining dimensional values, and use them to set altitude for each task.*
 
 ### Dimensions
 
@@ -96,6 +107,8 @@ Aim for 10-20 entries. More than 30 usually means the glossary is duplicating co
 ## Collections
 
 *Individual profiles loaded on-demand for focus and relevance.*
+
+Collection items are files named with lowercase-hyphenated slugs (e.g., `ciso.md`, `acme-corp.md`); cross-reference tables point to them by repo-relative path (e.g., `messaging/collections/personas/ciso.md`). Each item's frontmatter `aliases` list carries the alternate names that should route to it.
 
 | Collection      | Path                                 | Description                                                        | Load When        |
 |-----------------|--------------------------------------|--------------------------------------------------------------------|------------------|

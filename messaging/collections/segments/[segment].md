@@ -1,6 +1,7 @@
 ---
 title: ""
 description: ""
+aliases: []  # alternate names that route here, e.g. "FinServ"
 type: ""  # industry | size | region | maturity
 updated: ""
 ---
@@ -14,11 +15,12 @@ This profile defines how messaging adjusts for this segment — what to emphasiz
 ### Segment Characteristics
 
 [Instructions:
-Define conditions specific to this segment that materially affect messaging. These are deltas from the ICP baseline — only include what's different. If a characteristic is already in the ICP, it doesn't belong here.]
+Define conditions specific to this segment that materially affect messaging, and the observable company-level behaviors that signal messaging should adapt. These are deltas from the ICP baseline — only include what's different. If a characteristic or behavior is already in the ICP, it doesn't belong here.]
 
 [Tips:
 - Focus on constraints, risks, or priorities unique to this segment
 - Regulatory requirements, compliance frameworks, and industry-specific dynamics are common here
+- Look for buying patterns, evaluation criteria, or urgency triggers unique to this segment — budget cycles, fiscal year timing, and seasonal patterns often differ by segment
 - If you can't articulate what's different from the ICP baseline, this segment may not need its own profile]
 
 [Format:
@@ -26,20 +28,9 @@ Define conditions specific to this segment that materially affect messaging. The
 - **Verticals:** [industries within this segment, if applicable]
 - **Regions:** [geographies, if applicable]
 - **Company size:** [size range, if applicable]
+- **Behaviors:** [observable signals indicating messaging should adapt — buying patterns, evaluation criteria, urgency triggers]
 
 - [additional characteristic specific to this segment]]
-
-### Segment Behaviors
-
-[Instructions:
-Observable company-level signals indicating messaging should be adapted for this segment. Again, deltas — not repetitions of ICP behaviors.]
-
-[Tips:
-- Look for buying patterns, evaluation criteria, or urgency triggers unique to this segment
-- Budget cycles, fiscal year timing, and seasonal patterns often differ by segment]
-
-[Format:
-- [behavior specific to this segment]]
 
 ### Buying Dynamics
 
@@ -106,7 +97,7 @@ For each objection:
 [Instructions:
 3-5 rules for how this profile's voice and narrative should be applied — interpretations, constraints, and strategic choices unique to your company.]
 
-[Tips: 
+[Tips:
 Favor rules that change what an agent produces — what to lead with, what to avoid leading with, which claims are off-limits, and what to defer to when sources conflict.]
 
 [Format:

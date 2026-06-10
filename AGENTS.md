@@ -1,6 +1,6 @@
-# CLAUDE.md
+# AGENTS.md
 
-[Instructions: add the following to your CLAUDE.md file to teach the agent how the messaging system is structured]
+[Instructions: add the following to your AGENTS.md file to teach the agent how the messaging system is structured]
 
 ## About MESSAGE.md
 

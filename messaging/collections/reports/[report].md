@@ -1,6 +1,7 @@
 ---
 title: ""
 description: ""
+aliases: []  # shorthand citations that route here, e.g. "the Gartner MQ"
 type: ""  # analyst | research | survey | benchmark | trend
 source: ""
 published: ""
@@ -80,6 +81,10 @@ Bulleted list of cite-ready snippets, each with full attribution]
 [Instructions:
 When this report goes stale or gets superseded. Reports have shelf lives — analyst quadrants update annually, surveys age fast, trend reports become history.]
 
+[Tips:
+- Tie expiration to a concrete event (next edition publishes, fiscal year ends) rather than a vague "in a year"
+- A stale citation is worse than no citation — when in doubt, set the expiration earlier]
+
 [Format:
 - **Expected expiration:** [when this report stops being cite-worthy — e.g., "Q4 2026 when next Gartner MQ publishes"]
 - **Successor watch:** [what to look for that would replace this report]]
@@ -89,7 +94,7 @@ When this report goes stale or gets superseded. Reports have shelf lives — ana
 [Instructions:
 3-5 rules for how this profile's voice and narrative should be applied — interpretations, constraints, and strategic choices unique to your company.]
 
-[Tips: 
+[Tips:
 Favor rules that change what an agent produces — what to lead with, what to avoid leading with, which claims are off-limits, and what to defer to when sources conflict.]
 
 [Format:

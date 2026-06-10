@@ -1,6 +1,7 @@
 ---
 title: ""
 description: ""
+aliases: []  # customer name variants that route here
 products: []
 personas: []
 segments: []
@@ -19,6 +20,10 @@ This profile captures a customer's proof arc — who they are, what they were de
 [Instructions:
 The essential facts about this customer — enough context to assess whether the story is relevant for a given persona, segment, or product without reading the full narrative.]
 
+[Tips:
+- Match fields to how the audience self-identifies — industry and size are what make a reader think "that's us"
+- If the customer is anonymized, make the descriptor concrete ("Fortune 500 retailer"), not generic ("a large company")]
+
 [Format:
 - **Company:** [name or anonymized descriptor]
 - **Industry:** [vertical]
@@ -29,31 +34,22 @@ The essential facts about this customer — enough context to assess whether the
 ### Scenario
 
 [Instructions:
-What the customer was dealing with before they engaged — the conditions, pressures, and constraints that made the status quo untenable. Write from the customer's perspective. This should feel recognizable to the target persona.]
+What the customer was dealing with before they engaged — the conditions, pressures, and constraints that made the status quo untenable — and the compelling event, inflection point, or initiative that moved them from "we know this is a problem" to "we're solving it now." Write from the customer's perspective. This should feel recognizable to the target persona.]
 
 [Tips:
 - Ground in specifics — "managing 12,000 assets across 4 cloud providers with a team of 3" not "struggling with scale"
-- Connect to persona pain points — the scenario should map to challenges defined in at least one persona profile]
+- Connect to persona pain points — the scenario should map to challenges defined in at least one persona profile
+- The trigger is the urgency moment, distinct from the ongoing pain — good triggers: audit finding, board mandate, security incident, compliance deadline, contract renewal, team scaling]
 
 [Format:
-1-2 paragraphs in narrative form]
+1-2 paragraphs in narrative form, closing with:
 
-### Why They Acted
-
-[Instructions:
-The compelling event, inflection point, or initiative that moved them from "we know this is a problem" to "we're solving it now." This is the urgency trigger — distinct from the ongoing pain described in Scenario.]
-
-[Tips:
-- Good triggers: audit finding, board mandate, security incident, compliance deadline, contract renewal, team scaling
-- This connects to the Maturity section in people.md — the "what moves them forward" at whatever level this customer was at]
-
-[Format:
-1 paragraph describing the trigger]
+**Why they acted:** [the trigger that converted ongoing pain into action]]
 
 ### Outcome
 
 [Instructions:
-The measurable results — quantitative and qualitative — that the customer achieved. Before/after framing makes the impact concrete. Outcomes should support the Value Evidence metrics in proof.md.]
+The measurable results — quantitative and qualitative — that the customer achieved. Before/after framing makes the impact concrete. Outcomes should support the Value Measures in proof.md.]
 
 [Tips:
 - Quantitative outcomes should be specific: "reduced from X to Y" or "achieved Z% improvement" — not "significant improvement"
@@ -96,7 +92,7 @@ For each quote:
 [Instructions:
 3-5 rules for how this profile's voice and narrative should be applied — interpretations, constraints, and strategic choices unique to your company.]
 
-[Tips: 
+[Tips:
 Favor rules that change what an agent produces — what to lead with, what to avoid leading with, which claims are off-limits, and what to defer to when sources conflict.]
 
 [Format:

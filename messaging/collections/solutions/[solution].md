@@ -1,6 +1,7 @@
 ---
 title: ""
 description: ""
+aliases: []  # alternate use-case names that route here
 products: []
 updated: ""
 ---
@@ -133,7 +134,7 @@ Bulleted list — each proof point with source or attribution]
 [Instructions:
 3-5 rules for how this profile's voice and narrative should be applied — interpretations, constraints, and strategic choices unique to your company.]
 
-[Tips: 
+[Tips:
 Favor rules that change what an agent produces — what to lead with, what to avoid leading with, which claims are off-limits, and what to defer to when sources conflict.]
 
 [Format:
