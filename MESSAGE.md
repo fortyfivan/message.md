@@ -1,11 +1,11 @@
 ---
-company: [Instructions: Company name. Use official capitalization.]
-version: [Instructions: ISO date, YYYY-MM-DD. Update on meaningful revisions.]
-maintained-by: [Instructions: Owning team, e.g., "marketing".]
-last-reviewed: [Instructions: ISO date, YYYY-MM-DD.]
+company: "[Instructions: Company name. Use official capitalization.]"
+version: "[Instructions: ISO date, YYYY-MM-DD. Update on meaningful revisions.]"
+maintained-by: "[Instructions: Owning team.]"
+last-reviewed: "[Instructions: ISO date, YYYY-MM-DD.]"
 ---
 
-# [Instructions: Company name.]
+# [MESSAGE.md - Company name]
 
 [Instructions: One-paragraph overview, under 75 words. What the company does, who it serves, why it exists. Declarative; no generic adjectives.]
 
@@ -33,10 +33,10 @@ last-reviewed: [Instructions: ISO date, YYYY-MM-DD.]
 [Instructions: Set relevant company facts and select value(s) - not a hard list, choose what's relevant]
 
 - **Founded**:      [Year founded, optional light origin story]
-- **Headquarters**: [City, region. Or "Distributed (HQ: [city])".]
-- **Employees**:    [Count or range.]
-- **Funding**:      [Total + most recent round, or omit.]
-- **Customers**:    [Public count or range, with key names, or omit.]
+- **Headquarters**: [City, region, or distributed]
+- **Employees**:    [Count or range]
+- **Funding**:      [Total + most recent round, or omit]
+- **Customers**:    [Public count or range, with key names, or omit]
 
 ---
 

@@ -4,9 +4,9 @@ MESSAGE.md is a dynamic messaging specification for agents designed to keep AI-g
 
 ## What it is
 
-Everyone building an AI content factory needs a **messaging house**: a codified positioning and messaging framework that define the brand, audience, and portfolio so agents don't go off the rails. MESSAGE.md is that house, expressed as structured markdown with opinionated conventions.
+Every AI GTM content factory needs a **messaging house**: a codified positioning and messaging framework that define the brand, audience, and portfolio so agents don't go off the rails. MESSAGE.md is that house, expressed as structured markdown with opinionated conventions.
 
-This specification is for anyone building AI-native content factories – product marketers, content marketers, GTM engineers, founders. The spec defines your message so agents can go do agent things (like crank out content) and you can do human things (like have an opinion).
+This specification is for product marketers, content marketers, GTM engineers, founders, or anyone building AI GTM systems. The spec defines your positioning and messaging so agents can do agent things (like crank out content) and you can do human things (like have an opinion).
 
 This repository is the specification only with instructions to populate. [**claude-message**](https://github.com/fortyfivan/claude-message) is a complete Claude-native reference implementation — feel free to clone, personalize, and ship. It includes a guided bootstrap workflow to setup the messaging to your company. 
 
