@@ -1,18 +1,14 @@
 # MESSAGE.md
 
-MESSAGE.md is a dynamic messaging specification for agents designed to keep AI-generated content consistent, on-brand, relevant, and uniquely yours – without breaking the token bank.
+MESSAGE.md is a dynamic messaging specification for agents designed to keep AI-generated content consistent, relevant, and uniquely yours – without breaking the token bank.
 
 ## What it is
 
-Every AI system that generates content needs a **messaging house**: codified positioning and messaging that define the brand, audience, and portfolio. MESSAGE.md is that house, expressed as structured markdown with opinionated conventions.
+Everyone building an AI content factory needs a **messaging house**: a codified positioning and messaging framework that define the brand, audience, and portfolio so agents don't go off the rails. MESSAGE.md is that house, expressed as structured markdown with opinionated conventions.
 
-But most messaging frameworks go stale the second they get written down, and agents have a hard time parsing through messaging when there's multiple products, categories, personas, alternatives in play.
+This specification is for anyone building AI-native content factories – product marketers, content marketers, GTM engineers, founders. The spec defines your message so agents can go do agent things (like crank out content) and you can do human things (like have an opinion).
 
-What makes this specification dynamic in practice is the concept of a **messaging room**. This is runtime assembly of the right message for the right audience at the right time. The specification is designed to understand a particular scenario and only load the tightly scoped context it needs. And the structure is purpose-built to stay current to the tune of your market and business.
-
-This specification is for anyone building AI-native content factories – product marketers, content marketers, GTM engineers, founders. The spec defines your message so agents can go do agent things (like crank out content) and you can do human things (like take a stand).
-
-As a spec, this repository is just that. [**claude-message**](https://github.com/fortyfivan/claude-message) is a complete Claude-native reference implementation — feel free to clone, personalize, and ship. It includes a guided bootstrap workflow to setup the messaging to your company and a collection of messaging and content-generation workflows on top of the spec. 
+This repository is the specification only with instructions to populate. [**claude-message**](https://github.com/fortyfivan/claude-message) is a complete Claude-native reference implementation — feel free to clone, personalize, and ship. It includes a guided bootstrap workflow to setup the messaging to your company. 
 
 ## Core elements
 
@@ -23,15 +19,15 @@ As a spec, this repository is just that. [**claude-message**](https://github.com
 
 ## Design Principles
 
-- **Pluggable architecture** — Drop `MESSAGE.md` and the `messaging/` directory into any repository; your `AGENTS.md` or `CLAUDE.md` teaches the agent how to read and use it.
-- **Runtime messaging** — Assembly is driven by the scenario, so the agent delivers the right message at the right time for the right reasons.
+- **Pluggable architecture** — Drop populated `MESSAGE.md` and the `messaging/` directory into any repository; your `AGENTS.md` or `CLAUDE.md` teaches the agent how to read and use it.
+- **Runtime assembly** — Context is driven by the scenario, so the agent delivers the right message at the right time for the right reasons.
 - **Progressive loading** — Tight, per-task context assembly avoids confusion, hallucination, and bloat.
 - **Asset definitions** — LLMs already know how to write; they don't need skills for that. What they need is structured output and company-specific rules for better content and for downstream production.
 - **Update-ready** — The structured design makes the house maintainable by agents: market moves, competitive shifts, and new innovations land as reviewable file changes. Update workflows live in the reference implementation.
 
-## How to use
+## Getting Started
 
-**Authoring.** The files in this repository are templates with guided instructions for you or an agent to populate. Fill the `[Instructions: …]` placeholders with your company's content — reference `[Tips: …]` for help.
+**Authoring.** The files in this repository are templates with guided instructions for you or an agent to populate. Fill the `[Instructions: ...]` placeholders with your company's content — reference `[Tips: ...]` for help.
 
 **Runtime.** Wire the system into your agent by adding the MESSAGE.md handling block to your agent's `AGENTS.md` or `CLAUDE.md`. From there:
 
@@ -39,6 +35,21 @@ As a spec, this repository is just that. [**claude-message**](https://github.com
 2. For each task, the agent infers the **scenario** from the Scenarios dimensions, then progressively loads only the pillars, collections, and assets whose catalog **Load When** conditions match. Asset variants load when a specific variant is named.
 
 The result is tightly scoped context assembled per task, not the entire messaging house in every prompt. Message optimized and token optimized.
+
+## How to Use
+
+A fully populated **messaging house** serves as the core context layer for your GTM engine. Depending on your system, harness, tools, and integrations, there's a number of ways to leverage and extend this context:
+
+- **Content Production**: Write web copy, blog posts, landing pages, datasheets, whitepapers, etc., that doesn't suck by using the messaging house as the source of truth for what to say and how to say it.
+
+- **Campaign Planning**: Build out the plan and complete Bill of Materials for marketing campaigns, product launches, events, and sales plays using the messaging house to formulate the right strategy, the right narrative, and the right set of assets.
+
+- **Outreach Messaging**: Ensure that your signal-based workflows don't go off the rails by hooking into the messaging house to assemble tightly scoped context that will craft the most relevant outreach copy.
+
+- **Enablement Programs**: Make supporting training, reference, and supporting content automatic to the tune of every piece of news, launch, and play by hooking up the messaging house to 
+
+- **Continuous Research**: hook up scheduled tasks and loops to the messaging house to perform market, competitive, field, and community research. Bring any notable findings back into the messaging so you are always current to the tune of your environment. Ref: https://github.com/fortyfivan/claude-message/blob/main/.claude/skills/system/run-investigation/SKILL.md
+
 
 ## License
 
