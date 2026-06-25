@@ -38,18 +38,18 @@ Examples:
 ## Structure
 
 [Instructions:
-The shared wire-format spine, with per-variant emphasis. This section is the authoritative structural guide for the variant.
+The shared wire-format spine, with per-variant emphasis. Annotate each section with its output key in `{snake_case}`. These keys become the body schema agents emit as JSON. `headline`/`subhead`/`dateline`/`boilerplate` double as the Output schema metadata head — keep them consistent. A press release carries no marketing CTA, so the `{cta}` slot is the media-contact close.
 
 Wire-format spine (all variants):
-- Headline — declarative, factual, ≤12 words
-- Subhead — secondary line clarifying scope or significance
-- Dateline — `CITY — Month Day, Year —` followed by the lede paragraph
-- Lede (1 paragraph) — who, what, why now in plain language
-- Detail (2-3 paragraphs) — substantive context, capability description, market frame
-- Executive quote — attributed quote from a company leader
-- Second quote (optional) — a second perspective
-- Boilerplate — pulled from `messaging/pillars/profile.md` boilerplate field
-- Media contact — name and email
+Headline — declarative, factual, ≤12 words             → {headline}
+Subhead — secondary line clarifying scope/significance → {subhead}
+Dateline — `CITY — Month Day, Year —`                  → {dateline}
+Lede (1 paragraph) — who, what, why now                → {lede}
+Detail (2-3 paragraphs) — context, capability, market frame → {detail}
+Executive quote — attributed to a company leader       → {exec_quote}
+Second quote (optional) — a second perspective         → {second_quote}
+Boilerplate — pulled from `profile.md` boilerplate      → {boilerplate}
+Media contact — the close; name and email              → {cta}
 
 Per-variant emphasis:
 - Company-news: lede states the milestone + why-now; second quote often an investor/board member (funding) or the named executive (appointment)
@@ -57,7 +57,7 @@ Per-variant emphasis:
 - Partnership: lede frames the joint value; detail gives both parties balanced billing; two quotes, one per partner; boilerplate for both companies
 ]
 
-[Format: Numbered section pattern. Be specific about what each section delivers.]
+[Format: Each section carries a {key}. Be specific about what each section delivers. Keys are stable contract — renaming one is a breaking change for downstream consumers.]
 
 ## CTA conventions
 

@@ -21,10 +21,25 @@ Specify standards that hold across variants:
 - Banned superlatives in the lede ("revolutionary," "best-in-class," "next-generation")
 - Boilerplate pulled verbatim from the `messaging/pillars/profile.md` boilerplate field]
 
-## Frontmatter requirements
+## Output schema
 
 [Instructions:
-Document fields the distribution platform requires. PR Newswire/Business Wire may need `category`, `industry_codes`. For self-distributed releases, document the company newsroom CMS fields.]
+The structured contract for this asset's JSON output. This prose section is the home for production schema. Declare the parts that hold across every variant of this asset:
+
+- **Metadata** — the wire head the destination consumes: `headline`, `subhead`, `dateline` (`CITY — Month Day, Year`), `boilerplate` (pulled verbatim from `profile.md`), and `media_contact`. Note any distribution-platform fields (e.g., PR Newswire / Business Wire `category`, `industry_codes`) and ISO 8601 machine dates even where the dateline renders long-form. State the destination the metadata targets (the wire / distribution platform or newsroom CMS).
+- **Arrays** — optional repeatable groups the consumer iterates; declare the item shape, not instances. None by default — a partnership release may carry a `boilerplates` group (one item per company); declare that on the variant.
+
+Examples:
+- Head: `headline`, `subhead`, `dateline`, `boilerplate`, `media_contact`
+- PR Newswire / Business Wire: `category`, `industry_codes`
+- Self-distributed: the company newsroom CMS fields
+
+Body keys are NOT declared here. They vary by editorial intent and are defined per variant, annotated on each variant's Structure section. The envelope owns the invariant head; the variant owns the body.]
+
+[Tips:
+- Declare only what the destination actually consumes — don't mirror an exhaustive distribution-platform field list.
+- Keep the metadata keys consistent with the {keys} your variant Structures assume.
+- Keep dates ISO 8601 in the contract even though the dateline renders them long-form.]
 
 ## Variants
 

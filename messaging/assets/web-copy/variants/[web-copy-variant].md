@@ -41,17 +41,19 @@ Examples:
 ## Structure
 
 [Instructions:
-Full section sequence for this variant, with approximate length per section where it matters. This section is the authoritative structural guide for the variant.
+Full section sequence for this variant, with approximate length per section where it matters. Annotate each section with its output key in `{snake_case}`. These keys become the body schema agents emit as JSON.
 
-Examples for web-copy variants:
-- Product-page: Hero (capability + outcome) → Key capabilities (grid/table) → How it works → Inline proof (quote/metric) → Integrations → Get-started CTA
-- Solution-page: Hero (use-case outcome) → The problem → The approach → Capabilities mapped to the use case → Proof → CTA
-- Comparison-page: Hero (the choice being made) → At-a-glance comparison table → Section-by-section contrast → Where each fits → Proof → CTA
-- Topic-page (1,800–3,500 words): H1 (matches the search query) → Definition block (2–4 sentences, snippet-extractable, primary keyword in the first sentence) → Why it matters → How it works → Key components (the depth section; each component an H2/H3 that reads as a standalone query) → Common challenges (honest, in practitioner vocabulary) → How [company] approaches [topic] (the single commercial section, 15–20% of length) → Related resources (internal links distributed throughout)
+Example (product-page):
+Hero (capability + outcome)   → {hero}
+Key capabilities (grid/table) → {capabilities}
+How it works                  → {how_it_works}
+Inline proof (quote/metric)   → {proof}
+Integrations                  → {integrations}
+Get-started CTA               → {cta}
 
 SEO/GEO note: primary keyword in H1, first sentence of any definition block, and meta description; write H2/H3 headers as standalone searchable phrases.]
 
-[Format: Numbered section pattern. Be specific about what each section delivers.]
+[Format: Each section carries a {key}. Be specific about what each section delivers. Keys are stable contract — renaming one is a breaking change for downstream consumers.]
 
 ## CTA conventions
 

@@ -46,22 +46,18 @@ Examples:
 ## Structure
 
 [Instructions:
-Full structure for this variant — the section or block pattern, with the in-field format. This section is the authoritative structural guide for the variant.
+Full structure for this variant — the section or block pattern, with the in-field format. Annotate each section with its output key in `{snake_case}`. These keys become the body schema agents emit as JSON. Enablement carries no marketing CTA — the `{cta}` slot is the rep's next field move (a follow-up question, demo moment, asset to send, or SE / deal-desk handoff).
 
-Examples for enablement variants:
-- Battlecard: Their pitch → Where we win → Where they're strong (honest) → Objection responses ("when they say X, say Y") → Proof to cite → Trap-setting questions
-- Playbook: Play thesis → Target / disqualify → Discovery framework → The motion (stage by stage) → Assets to use → Objection handling
-- Discovery-guide: grouped questions, one group per visibility gap; each entry is one question + fit signal + red-flag signal + follow-up. Use a consistent entry template, e.g.:
-    **Q: <the question as the rep asks it>**
-    - *Fit signal:* <what a good answer sounds like>
-    - *Red flag:* <what an answer that exposes the gap sounds like>
-    - *Follow-up:* <the next question, demo moment, or handoff to reach for>
-- Talk-track: hook → value prop → branch responses → meeting ask, with timing
-- Demo-script: scene-by-scene show-and-say, scoped to a single use case
+Example (battlecard):
+Their pitch                                    → {their_pitch}
+Where we win                                   → {where_we_win}
+Where they're strong (honest)                  → {their_strengths}
+Objection responses ("when they say X, say Y") → {objections}
+Proof to cite                                  → {proof}
+Trap-setting questions (the next move)         → {cta}
+]
 
-Length: as long as the play needs, but every section / question earns its place — cut anything that doesn't help the rep act or qualify.]
-
-[Format: section or entry pattern appropriate to the variant. Be specific about what each part delivers and the in-field rendering.]
+[Format: Each section carries a {key}. Be specific about what each part delivers and the in-field rendering. Keys are stable contract — renaming one is a breaking change for downstream consumers.]
 
 ## CTA conventions
 

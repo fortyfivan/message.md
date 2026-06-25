@@ -27,14 +27,24 @@ Specify the company's enablement-wide standards. Enablement is consumed under pr
 - Make competitor handling concrete: a table of grouping → approach → lead-with → acknowledge beats prose.
 - Keep disqualification as hard rules, not soft suggestions — reps need a clear walk-away line.]
 
-## Frontmatter requirements
+## Output schema
 
 [Instructions:
-These are internal documents — design-system-driven, typically rendered to PDF for field use rather than published through a CMS. No publishing tool is configured by default; extend when one is set.
+The structured contract for this asset's JSON output. This prose section is the home for production schema. Declare the parts that hold across every variant of this asset:
 
-Keys: `title` (the document headline, e.g. "Battlecard: [competitor]" / "Playbook: [play]"), `subtitle` (one-line frame where the layout uses one), `audience` (the single internal consumer — AE, SDR/BDR, SE, or CSM; one audience per document), `body` (the rendered content following the variant's Structure section).
+- **Metadata** — the document head: `title` (the headline, e.g. "Battlecard: [competitor]" / "Playbook: [play]"), `subtitle` (one-line frame where the layout uses one), and `audience` (the single internal consumer — AE, SDR/BDR, SE, or CSM; one audience per document). State the destination the metadata targets (the design system / PDF render). Variant-specific metadata gets declared on the variant — e.g. a battlecard's `competitor` (matching `messaging/collections/competitors/`), a playbook's `play`.
+- **Arrays** — optional repeatable groups the consumer iterates; declare the item shape, not instances. None by default — variant-specific groups (a battlecard's objection list, an FAQ's topic groups, a discovery guide's question entries) are declared on the relevant variant.
 
-Variant-specific frontmatter gets added per-variant — e.g. a battlecard's `competitor` (matching `messaging/collections/competitors/`), a playbook's `play`, an FAQ's topic groups.]
+Examples:
+- Head: `title`, `subtitle`, `audience` (one of AE, SDR/BDR, SE, CSM)
+- Variant-specific: a battlecard's `competitor` (matching `messaging/collections/competitors/`), a playbook's `play`, an FAQ's topic groups
+
+Body keys are NOT declared here. The rendered content following the variant's Structure section is the body — it varies by editorial intent and is annotated on each variant's Structure section. The envelope owns the invariant head; the variant owns the body.]
+
+[Tips:
+- Declare only what the renderer actually consumes — don't mirror an exhaustive field list.
+- Keep the metadata keys consistent with the {keys} your variant Structures assume.
+- One `audience` per document — don't let a single file try to serve AE and CSM at once.]
 
 ## Variants
 

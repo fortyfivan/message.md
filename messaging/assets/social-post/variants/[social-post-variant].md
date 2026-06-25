@@ -40,15 +40,17 @@ Examples:
 ## Structure
 
 [Instructions:
-Full section sequence (or character/word constraints) for this variant. Examples:
+Full section sequence (or character/word constraints) for this variant. Annotate each section with its output key in `{snake_case}`. These keys become the body schema agents emit as JSON.
 
-- LinkedIn: Hook (line 1, ≤120 chars — appears before "see more") → Setup (lines 2-4) → Substance (1-3 short paragraphs) → Close (question, takeaway, or CTA) → Hashtags (≤3, at the end)
-- Twitter/X post: Single ≤280-char message; no preamble; declarative; optional 1 image/video; optional 1 hashtag
-- Twitter/X thread: Tweet 1 (full thesis in 280 chars + "/ thread") → Tweet 2-N (one evidence point each) → Closer tweet (link to long-form OR CTA OR repost-ask)
-- Reddit: Title (action-oriented, ≤300 chars, follows subreddit rules) → Body (well-formed markdown, sections via headers, code blocks where appropriate) → Genuine question or context for discussion at the end
+Example (LinkedIn):
+Hook (line 1, ≤120 chars — before "see more") → {hook}
+Setup (lines 2-4)                             → {setup}
+Substance (1-3 short paragraphs)              → {substance}
+Hashtags (≤3, at the end)                     → {hashtags}
+Close (question, takeaway, or CTA)            → {cta}
 ]
 
-[Format: Numbered section pattern OR character constraints. Be specific about each platform's quirks.]
+[Format: Each section carries a {key} (or character constraints). Be specific about each platform's quirks. Keys are stable contract — renaming one is a breaking change for downstream consumers.]
 
 ## CTA conventions
 

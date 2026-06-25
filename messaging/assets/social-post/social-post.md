@@ -20,10 +20,25 @@ Specify the company's social-wide standards that hold across variants:
 - Quote-share rule: 1-2 sentences of original framing before the share
 - Attribution policy when reposting customer or analyst content]
 
-## Frontmatter requirements
+## Output schema
 
 [Instructions:
-`mentions` is an array of platform-prefixed handle strings (e.g., LinkedIn `["company/acme", "in/jdoe"]`; Twitter/X `["@acme"]`; Reddit `["u/jdoe"]`). `media_url` supports a single image or video; for multi-image carousels or threads, extend the schema (`media_urls`, `thread_sequence`) per variant requirements. Document any publishing automation (Buffer, Hootsuite, native LinkedIn API, Twitter API).]
+The structured contract for this asset's JSON output. This prose section is the home for production schema. Declare the parts that hold across every variant of this asset:
+
+- **Metadata** — the post head the publishing tool consumes: target `channel`/platform, and the post text head where the platform separates it (e.g., a Reddit `title` distinct from body) plus a single `media_url`. Note per-platform character limits as format constraints. State the destination the metadata targets (the social publishing tool — Buffer, Hootsuite, native LinkedIn / Twitter API).
+- **Arrays** — optional repeatable groups the consumer iterates; declare the item shape, not instances. `mentions` is the group of platform-prefixed handle strings (LinkedIn `["company/acme", "in/jdoe"]`; Twitter/X `["@acme"]`; Reddit `["u/jdoe"]`). Thread / carousel variants add a `media_urls` or `thread_sequence` group, declared on the variant.
+
+Examples:
+- Head: `channel`, the post text head (Reddit `title` vs. body), `media_url` (single image/video)
+- Arrays: `mentions` (platform-prefixed handles); thread / carousel `media_urls`, `thread_sequence`
+- Automation: Buffer, Hootsuite, native LinkedIn API, Twitter API
+
+Body keys are NOT declared here. They vary by editorial intent and are defined per variant, annotated on each variant's Structure section. The envelope owns the invariant head; the variant owns the body.]
+
+[Tips:
+- Declare only what the destination actually consumes — don't mirror an exhaustive field list.
+- Keep the metadata keys consistent with the {keys} your variant Structures assume.
+- Note each platform's hard character limit so the contract can be validated before publish.]
 
 ## Variants
 

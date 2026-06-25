@@ -22,17 +22,26 @@ Specify the company's landing-page standards that hold across variants:
 - Hero headline derivation rule (from the persona's altitude)
 - Image / video usage norms]
 
-## Frontmatter requirements
+## Output schema
 
 [Instructions:
-Document what the publishing destination expects. If the CMS uses structured sections, populate `sections` as an array of block objects (`{type, heading, body, image_url, ...}`). For flat-HTML CMSs, replace with a single `body` key.
+The structured contract for this asset's JSON output. This prose section is the home for production schema. Declare the parts that hold across every variant of this asset:
 
-Common additions for any variant: `og_image_url`, `form_id` (for gated pages), `pardot_form_handler_url`, `marketo_form_id`.
+- **Metadata** — the page head the CMS consumes: page `title`, `og_image_url`, and `form_id` for gated pages. Note format constraints and ISO 8601 dates. State the destination the metadata targets (the marketing-site CMS).
+- **Arrays** — optional repeatable groups the consumer iterates; declare the item shape, not instances. `sections` is the ordered group of block objects (`{type, heading, body, image_url, …}`) where the CMS renders structured sections; the variant's Structure defines the block sequence (for flat-HTML CMSs the body collapses to a single body key, declared per variant). Variant-specific groups (a webinar's `speakers`/`agenda`, a product page's `feature_list`) are declared on the relevant variant.
 
-Variant-specific fields added per-variant during `/design asset landing-page --add-variant`:
-- webinar / event: `event_date`, `event_time`, `event_duration`, `speakers` (array), `agenda` (array), `registration_cta_url`, `on_demand_cta_url`, webinar platform integration fields (Zoom, ON24, Demio)
-- gated-asset: `asset_download_url`, `gated_form_id`
-- product-page: `product_slug`, `feature_list` (array)]
+Examples:
+- Any variant: `og_image_url`, `form_id`, `pardot_form_handler_url`, `marketo_form_id`
+- Webinar / event: `event_date`, `event_time`, `event_duration`, `speakers` (array), `agenda` (array), `registration_cta_url`, `on_demand_cta_url`, webinar-platform fields (Zoom, ON24, Demio)
+- Gated-asset: `asset_download_url`, `gated_form_id`
+- Product-page: `product_slug`, `feature_list` (array)
+
+Body keys are NOT declared here. They vary by editorial intent and are defined per variant, annotated on each variant's Structure section. The envelope owns the invariant head; the variant owns the body.]
+
+[Tips:
+- Declare only what the destination actually consumes — don't mirror an exhaustive CMS field list.
+- Keep the metadata keys consistent with the {keys} your variant Structures assume.
+- For SEO/OG fields, note whether the CMS derives meta from the title or wants `og_image_url`/meta explicit.]
 
 ## Variants
 

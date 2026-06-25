@@ -43,18 +43,18 @@ Examples:
 ## Structure
 
 [Instructions:
-Full section sequence for this variant. The envelope no longer carries Structure — this section is the authoritative structural guide.
+Full section sequence for this variant. Annotate each section with its output key in `{snake_case}`. These keys become the body schema agents emit as JSON.
 
-Examples for landing-page variants:
-- Campaign-destination: Hero (offer + CTA above fold) → Problem (persona pain) → Solution (1-2 paragraphs) → Differentiators (3 cards) → Proof (single quote/stat) → CTA repeat
-- Product-page: Hero (capability + outcome) → Key capabilities (table or grid) → Customer proof (1-2 logos/quotes) → Integrations (if relevant) → Pricing / get-started CTA
-- Webinar (live): Hero (title + date/time + Register CTA) → Speakers (1-3) → Description ("what you'll learn") → Agenda → Registration form
-- Webinar (on-demand): Hero (title + Watch-now CTA) → Speakers → Description → Watch CTA → Closing proof block
-- Event: Hero (event + format + date) → Why attend → Schedule / sessions → Travel / location → Registration CTA
-- Gated-asset: Hero (asset title + value claim) → What's inside (3-5 bullets) → Author / source credibility → Form (the gate)
+Example (campaign-destination):
+Hero (offer + CTA above fold) → {hero}
+Problem (persona pain)        → {problem}
+Solution (1-2 paragraphs)     → {solution}
+Differentiators (3 cards)     → {differentiators}
+Proof (single quote/stat)     → {proof}
+CTA repeat                    → {cta}
 ]
 
-[Format: Numbered section pattern. Be specific about what each section delivers.]
+[Format: Each section carries a {key}. Be specific about what each section delivers. Keys are stable contract — renaming one is a breaking change for downstream consumers.]
 
 ## CTA conventions
 

@@ -28,12 +28,25 @@ Specify the company's web-wide standards that hold across variants. Web is the m
 - Be specific with word-count bands; vague guidance produces inconsistent pages.
 - Keep naming rules concrete — list the canonical product names and the banned synonyms, not just "follow the glossary."]
 
-## Frontmatter requirements
+## Output schema
 
 [Instructions:
-Document what the publishing destination expects. If the CMS renders pages as ordered blocks, populate `sections` as an array of block objects (`{type, heading, body, image_url, ...}`); the per-variant Structure section defines the block sequence. A comparison-page section block may carry table data.
+The structured contract for this asset's JSON output. This prose section is the home for production schema. Declare the parts that hold across every variant of this asset:
 
-`sections` renders as an ordered array of blocks. No CMS is configured by default — extend frontmatter (e.g., `og_image_url`, `product_slug`, `feature_list`) when a publishing destination is set. Per-variant SEO patterns belong in the variant (e.g., comparison `seo_title` includes both company names; topic `seo_title` leads with the primary keyword).]
+- **Metadata** — the page head the CMS consumes: page `title` and SEO (`seo_title`, `seo_description`, meta). Note that per-variant SEO patterns belong on the variant (a comparison `seo_title` includes both company names; a topic `seo_title` leads with the primary keyword). State the destination the metadata targets (the marketing-site CMS — none configured by default).
+- **Arrays** — optional repeatable groups the consumer iterates; declare the item shape, not instances. `sections` is the ordered group of block objects (`{type, heading, body, image_url, …}`) where the CMS renders pages as blocks; the variant's Structure defines the block sequence (a comparison-page block may carry table data). Omit if the CMS takes flat body.
+
+Examples:
+- Head: page `title`, `seo_title`, `seo_description`, meta
+- When a destination is set: `og_image_url`, `product_slug`, `feature_list`
+- Per-variant SEO patterns belong on the variant (comparison `seo_title` includes both company names; topic `seo_title` leads with the primary keyword)
+
+Body keys are NOT declared here. They vary by editorial intent and are defined per variant, annotated on each variant's Structure section. The envelope owns the invariant head; the variant owns the body.]
+
+[Tips:
+- Declare only what the destination actually consumes — don't mirror an exhaustive CMS field list.
+- Keep the metadata keys consistent with the {keys} your variant Structures assume.
+- For SEO fields, note whether the CMS derives meta from the H1/excerpt or wants them explicit.]
 
 ## Variants
 

@@ -41,15 +41,19 @@ Examples:
 ## Structure
 
 [Instructions:
-Full section sequence for this variant. The envelope no longer carries Structure — this section is the authoritative structural guide.
+Full section sequence for this variant. Annotate each section with its output key in `{snake_case}`. These keys become the body schema agents emit as JSON.
 
-Example for one-pager variants:
-- Sales: Header (persona + value prop) → The problem (2-3 sentences) → The solution (2-3 sentences) → Differentiators (3 bullets) → Use cases (3 bullets) → Proof (1-2 customers + metric) → CTA
-- Battlecard: Header (us vs. competitor) → Their pitch (2-3 sentences in their words) → Their weakness (2-3 sentences) → How we win (3 differentiators with proof) → Objection handling (3 objections + responses) → Where they win (1-2 honest concessions) → CTA
-- Datasheet: Header (product + tagline) → Key capabilities (table or 3-column grid) → Technical specs (deployment, integrations, scale) → Compliance / certifications → Quick comparison vs. category default → CTA
+Example (sales):
+Header (persona + value prop)  → {header}
+The problem (2-3 sentences)    → {problem}
+The solution (2-3 sentences)   → {solution}
+Differentiators (3 bullets)    → {differentiators}
+Use cases (3 bullets)          → {use_cases}
+Proof (1-2 customers + metric) → {proof}
+CTA                            → {cta}
 ]
 
-[Format: Numbered section pattern. Be specific about what each section delivers, including approximate length/space per section since one-pagers are space-constrained.]
+[Format: Each section carries a {key}. Be specific about what each section delivers, including approximate length/space per section since one-pagers are space-constrained. Keys are stable contract — renaming one is a breaking change for downstream consumers.]
 
 ## CTA conventions
 

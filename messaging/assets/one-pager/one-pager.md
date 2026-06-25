@@ -22,15 +22,24 @@ Specify the company's one-pager-wide standards that hold across variants:
 - Brand styling constraints (color tokens, logo placement, footer)
 - File naming convention for the rendered PDF]
 
-## Frontmatter requirements
+## Output schema
 
 [Instructions:
-Document design system or PDF generation tool fields. Common additions:
-- `template_id` (Figma component or PDF generator template)
-- `page_size` (Letter, A4)
-- `brand_theme` (light, dark, partner co-brand)
-- `output_format` (PDF, web, both)
-Variant-specific frontmatter (e.g., a battlecard's `competitor_name`, a datasheet's `spec_table`) gets added per-variant during `/design asset --add-variant`.]
+The structured contract for this asset's JSON output. This prose section is the home for production schema. Declare the parts that hold across every variant of this asset:
+
+- **Metadata** — the design/render head: `title`, `template_id` (Figma component or PDF generator template), `page_size` (Letter, A4), `brand_theme` (light, dark, partner co-brand), `output_format` (PDF, web, both). State the destination the metadata targets (the design system / PDF generator — no CMS by default).
+- **Arrays** — optional repeatable groups the consumer iterates; declare the item shape, not instances. None by default — variant-specific groups (a datasheet's `spec_table` rows, a battlecard's objection list) are declared on the relevant variant.
+
+Examples:
+- `template_id` (Figma component or PDF generator template), `page_size` (Letter, A4), `brand_theme` (light, dark, partner co-brand), `output_format` (PDF, web, both)
+- Variant-specific: a battlecard's `competitor_name`, a datasheet's `spec_table`
+
+Body keys are NOT declared here. They vary by editorial intent and are defined per variant, annotated on each variant's Structure section. The envelope owns the invariant head; the variant owns the body.]
+
+[Tips:
+- Declare only what the renderer actually consumes — don't mirror an exhaustive field list.
+- Keep the metadata keys consistent with the {keys} your variant Structures assume.
+- This renders to a fixed single page — note any field length caps the template enforces.]
 
 ## Variants
 

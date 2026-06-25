@@ -15,14 +15,14 @@ This repository is the specification only with instructions to populate. [**clau
 - **MESSAGE.md**: sets the altitude. Your company facts, glossary of terms, brand guardrails, and scenario dimensions. Agents load this first.
 - **Pillars**: tell the story. Foundational messaging documents for the company, narrative, market, audience, portfolio - with the proof to back it all up.
 - **Collections**: hold the details. Granular profiles loaded on demand for specific personas, products, competitors, and more. 
-- **Assets**: define the shape. Structured documents for what every asset type looks like for you, with the conventions to design and produce.
+- **Assets**: define the shape. Structured documents for what every asset type looks like for you, with the conventions to design and produce — each carrying an output contract: metadata and arrays in the envelope, body keys annotated on each variant's structure.
 
 ## Design Principles
 
 - **Pluggable architecture** — Drop populated `MESSAGE.md` and the `messaging/` directory into any repository; your `AGENTS.md` or `CLAUDE.md` teaches the agent how to read and use it.
 - **Runtime assembly** — Context is driven by the scenario, so the agent delivers the right message at the right time for the right reasons.
 - **Progressive loading** — Tight, per-task context assembly avoids confusion, hallucination, and bloat.
-- **Asset definitions** — LLMs already know how to write; they don't need skills for that. What they need is structured output and company-specific rules for better content and for downstream production.
+- **Asset definitions** — LLMs already know how to write; they don't need skills for that. What they need is structured output and company-specific rules for better content and for downstream production. Each asset declares that output contract explicitly: the envelope's `## Output schema` owns the invariant head — metadata and arrays the destination consumes — while each variant's `## Structure` annotates its sections with `{snake_case}` body keys, so the structured output stays in sync with the structure by construction. Rendering to a target format is delegated to a conformant visual spec; the messaging spec stays messaging-pure.
 - **Update-ready** — The structured design makes the house maintainable by agents: market moves, competitive shifts, and new innovations land as reviewable file changes. Update workflows live in the reference implementation.
 
 ## Getting Started

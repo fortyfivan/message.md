@@ -27,10 +27,23 @@ Specify the company's blog-wide standards that hold across variants. Examples:
 - Note any platform-specific quirks (e.g., HubSpot character limits, WordPress excerpt fields)
 - Variant-specific length adjustments belong in the variant's Structure section, not here]
 
-## Frontmatter requirements
+## Output schema
 
 [Instructions:
-Document the content fields the publishing destination needs — this prose section is the home for production schema, kept out of the messaging frontmatter. Be explicit about format and constraints. For a blog post that typically means the core content fields (title, slug, body, excerpt, categories, tags, author) plus SEO (`seo_title`, `seo_description`), and where the destination needs them, `published_date` and `canonical_url`. Note any controlled vocabularies (e.g., a fixed list of allowed categories).]
+The structured contract for this asset's JSON output. This prose section is the home for production schema. Declare the parts that hold across every variant of this asset:
+
+- **Metadata** — the head/publishing fields the blog CMS consumes: `title`, `slug`, `excerpt`, author byline, SEO (`seo_title`, `seo_description`), and where the destination needs them `published_date` and `canonical_url`. Note controlled vocabularies (e.g., the fixed set of allowed categories) and format constraints (slug casing, ISO 8601 dates). State the destination the metadata targets (the blog CMS).
+- **Arrays** — optional repeatable groups the consumer iterates; declare the item shape, not instances. A standard post has none — `categories`/`tags` are flat metadata lists, not iterated item groups; omit unless the CMS models a repeatable block.
+
+Examples:
+- Core content: `title`, `slug`, `excerpt`, `author`, and — where the destination needs them — `published_date`, `canonical_url`
+- SEO: `seo_title`, `seo_description` (or CMS-derived from title/excerpt)
+- Controlled vocab: the fixed `categories` list; `tags`]
+
+[Tips:
+- Declare only what the destination actually consumes — don't mirror an exhaustive CMS field list.
+- Keep the metadata keys consistent with the {keys} your variant Structures assume.
+- For SEO fields, note whether the CMS derives `seo_title`/`seo_description` from title/excerpt or wants them explicit.]
 
 ## Variants
 

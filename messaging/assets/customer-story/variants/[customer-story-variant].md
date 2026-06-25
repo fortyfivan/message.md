@@ -41,15 +41,19 @@ Examples:
 ## Structure
 
 [Instructions:
-Full section sequence for this variant. The envelope no longer carries Structure for variant-likely assets — this section is the authoritative structural guide for the variant.
+Full section sequence for this variant. Annotate each section with its output key in `{snake_case}`. These keys become the body schema agents emit as JSON.
 
-Example for customer-story variants:
-- Anchor: Customer snapshot (who they are, industry, scale) → Challenge (the pain in their words) → Why they chose [product] → Implementation → Outcome with metrics → Forward-looking quote
-- Mini-story: One-line context → The result (lead with the metric) → Supporting quote → logo + CTA
-- Video-transcript companion: Hero quote pulled from the video → Short narrative framing the clip → Key moments / timestamps → full or excerpted transcript → CTA
+Example (anchor):
+Customer snapshot (who they are, industry, scale) → {snapshot}
+Challenge (the pain in their words)               → {challenge}
+Why they chose [product]                          → {why_us}
+Implementation                                    → {implementation}
+Outcome with metrics                              → {outcome}
+Forward-looking quote                             → {forward_quote}
+Closing CTA                                       → {cta}
 ]
 
-[Format: Numbered section pattern. Be specific about what each section delivers, including approximate length per section where it matters.]
+[Format: Each section carries a {key}. Be specific about what each section delivers, including approximate length per section where it matters. Keys are stable contract — renaming one is a breaking change for downstream consumers.]
 
 ## CTA conventions
 

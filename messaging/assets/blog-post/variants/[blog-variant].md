@@ -40,15 +40,17 @@ Examples:
 ## Structure
 
 [Instructions:
-Full section sequence for this variant. The envelope no longer carries Structure for variant-likely assets — this section is the authoritative structural guide for the variant.
+Full section sequence for this variant. Annotate each section with its output key in `{snake_case}`. These keys become the body schema agents emit as JSON.
 
-Example for blog-post variants:
-- Use-case: Hook on customer pain → How they tried before → How [product] changed it → Outcome with metrics → What other teams can take from this
-- Thought-leadership: Provocative thesis → Why the consensus is wrong → Evidence (data, examples) → What this means for [persona] → Implication for the next 12 months
-- Product-announcement: Hero claim in lede → What's new → Why it matters → How to access → Link to docs
+Example (product-announcement):
+Hero claim in lede        → {lede}
+What's new                → {whats_new}
+Why it matters            → {significance}
+How to access + docs link → {access}
+Closing CTA               → {cta}
 ]
 
-[Format: Numbered section pattern. Be specific about what each section delivers, including approximate length per section where it matters.]
+[Format: Each section carries a {key}. Be specific about what each section delivers, including approximate length per section where it matters. Keys are stable contract — renaming one is a breaking change for downstream consumers.]
 
 ## CTA conventions
 

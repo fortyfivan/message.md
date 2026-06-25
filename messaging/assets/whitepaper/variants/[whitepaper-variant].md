@@ -44,16 +44,19 @@ Examples:
 ## Structure
 
 [Instructions:
-Full section sequence for this variant. Examples:
+Full section sequence for this variant. Annotate each section with its output key in `{snake_case}`. These keys become the body schema agents emit as JSON.
 
-- Research: Executive Summary (1 page) → Methodology (sample, time window, instruments, limitations) → Key Findings (3-5 H2 sections, each with data + commentary) → Implications → Appendix (raw tables) → Author bio
-- Topic: Executive Summary → The argument (thesis stated up front) → Why now (market context) → Evidence (data, examples, citations) → Implications for [persona] → Recommendations → Author bio
-- Benchmark: Executive Summary → Methodology (peer set, time window, metrics) → Comparative findings (data tables) → Patterns observed → What to do with this → Author bio
-- Point-of-view: Provocative thesis → What the consensus says → Why the consensus is incomplete → Our case (with evidence) → What this means going forward → Author bio
-- Analyst-brief: Bottom Line (1 paragraph) → Market context → Vendor landscape → Our position → Recommendation → Caveats
+Example (research):
+Executive Summary (1 page)                          → {exec_summary}
+Methodology (sample, time window, instruments, limitations) → {methodology}
+Key Findings (3-5 H2 sections, data + commentary)   → {findings}
+Implications                                        → {implications}
+Appendix (raw tables)                               → {appendix}
+Author bio                                          → {author_bio}
+Download / briefing CTA                             → {cta}
 ]
 
-[Format: Numbered section pattern. Specify approximate length per section since whitepaper length varies widely (3,000-10,000 words).]
+[Format: Each section carries a {key}. Specify approximate length per section since whitepaper length varies widely (3,000-10,000 words). Keys are stable contract — renaming one is a breaking change for downstream consumers.]
 
 ## CTA conventions
 

@@ -41,14 +41,17 @@ Examples:
 ## Structure
 
 [Instructions:
-Full section sequence for this variant. Examples:
+Full section sequence for this variant. Annotate each section with its output key in `{snake_case}`. These keys become the body schema agents emit as JSON. The `subject`/`preheader` keys double as the Output schema metadata head — keep them consistent.
 
-- Nurture: Subject (≤8 words; can reference prior asset) → Preheader (extends subject) → Opening (1-2 sentences referencing recipient's last action) → Body (2-3 short paragraphs delivering the next useful thing) → CTA (clear next step appropriate to funnel stage)
-- Outbound: Subject (≤6 words; no clichés — no "circling back" / "touching base" / "just following up") → Preheader (≤80 chars; advances the subject) → Opening (1 sentence personalized to role, company, or trigger event) → Hook (1-2 sentences naming the specific pain) → Bridge (1 sentence connecting pain to the company's approach — no pitch, no features) → CTA (single low-friction ask: 15-min conversation, peer reference, share a benchmark)
-- Promo: Subject (≤8 words; carries the offer or benefit) → Preheader (urgency or specifics) → Hero block (one declarative sentence + visual if used) → Body (2-3 short paragraphs; what + why + when) → CTA (single, time-bound where applicable)
+Example (nurture):
+Subject (≤8 words; can reference prior asset)               → {subject}
+Preheader (extends subject)                                 → {preheader}
+Opening (1-2 sentences referencing recipient's last action) → {opening}
+Body (2-3 short paragraphs delivering the next useful thing) → {body}
+CTA (clear next step appropriate to funnel stage)           → {cta}
 ]
 
-[Format: Numbered section pattern. Be specific about each section's purpose and length.]
+[Format: Each section carries a {key}. Be specific about each section's purpose and length. Keys are stable contract — renaming one is a breaking change for downstream consumers.]
 
 ## CTA conventions
 

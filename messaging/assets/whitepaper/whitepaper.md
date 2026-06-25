@@ -22,10 +22,24 @@ Specify the company's whitepaper-wide standards that hold across variants:
 - Author byline + contact conventions
 - Methodology disclosure rule (when applicable to variant)]
 
-## Frontmatter requirements
+## Output schema
 
 [Instructions:
-Document gated-PDF + landing page schema. `download_cta_label`/`download_cta_url` for gated; drop for web-only. For HubSpot/Marketo gated content, add `form_id` and `landing_page_url`. Variant-specific frontmatter (a research variant's `survey_n` and `survey_date`; a benchmark's `peer_set`) added per-variant during `/design asset whitepaper --add-variant`.]
+The structured contract for this asset's JSON output. This prose section is the home for production schema. Declare the parts that hold across every variant of this asset:
+
+- **Metadata** — the gated-PDF + landing head: `title`, `download_cta_label`/`download_cta_url` for gated (drop for web-only), and gating fields (`form_id`, `landing_page_url`). State the destination the metadata targets (the gated-content platform — HubSpot / Marketo — plus the PDF render).
+- **Arrays** — optional repeatable groups the consumer iterates; declare the item shape, not instances. None by default — variant-specific data groups (a research variant's tables keyed by `survey_n`/`survey_date`; a benchmark's `peer_set`) are declared on the relevant variant.
+
+Examples:
+- Gated: `download_cta_label`, `download_cta_url`, `form_id`, `landing_page_url` (drop the CTA fields for web-only)
+- Variant-specific: a research variant's `survey_n`, `survey_date`; a benchmark's `peer_set`
+
+Body keys are NOT declared here. They vary by editorial intent and are defined per variant, annotated on each variant's Structure section. The envelope owns the invariant head; the variant owns the body.]
+
+[Tips:
+- Declare only what the destination actually consumes — don't mirror an exhaustive field list.
+- Keep the metadata keys consistent with the {keys} your variant Structures assume.
+- For the landing page's SEO fields, note whether the CMS derives them from the title or wants them explicit.]
 
 ## Variants
 

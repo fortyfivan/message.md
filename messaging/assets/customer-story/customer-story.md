@@ -20,10 +20,24 @@ Specify the company's customer-story standards that hold across variants:
 - Customer logo + photo permissions confirmed before publish
 - Industry / region labeling conventions]
 
-## Frontmatter requirements
+## Output schema
 
 [Instructions:
-Document CMS expectations. `metrics` is typically an array of objects (`{label, value, context}`) or flat strings. Some CMSs require `customer_logo_alt` for accessibility — add as needed. Note any controlled vocabularies (industries, regions).]
+The structured contract for this asset's JSON output. This prose section is the home for production schema. Declare the parts that hold across every variant of this asset:
+
+- **Metadata** — the head fields the CMS consumes: `title`/headline, customer name, industry and region (controlled vocabularies), and `customer_logo_alt` where the CMS requires it for accessibility. State the destination the metadata targets (the customers-section CMS).
+- **Arrays** — optional repeatable groups the consumer iterates; declare the item shape, not instances. `metrics` is the group of outcome objects (`{label, value, context}`) — or flat strings where the CMS expects them.
+
+Examples:
+- Head: `title`/headline, customer name, `industry`, `region` (controlled vocabularies), `customer_logo_alt` (where required for accessibility)
+- Arrays: `metrics` (`{label, value, context}` or flat strings)
+
+Body keys are NOT declared here. They vary by editorial intent and are defined per variant, annotated on each variant's Structure section. The envelope owns the invariant head; the variant owns the body.]
+
+[Tips:
+- Declare only what the destination actually consumes — don't mirror an exhaustive CMS field list.
+- Keep the metadata keys consistent with the {keys} your variant Structures assume.
+- Pin the controlled vocabularies (industries, regions) so values stay consistent across stories.]
 
 ## Variants
 

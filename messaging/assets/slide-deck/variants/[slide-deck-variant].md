@@ -41,25 +41,23 @@ Examples:
 ## Structure
 
 [Instructions:
-Full slide sequence for this variant — each slide = one heading-as-claim + sparse body + speaker notes. State the slide count and the required spine, then optional inserts. This section is the authoritative structural guide for the variant.
+Full slide sequence for this variant — each slide = one heading-as-claim + sparse body + speaker notes. Annotate each slide with its output key in `{snake_case}`; each slide is one `slides[]` item. These keys become the body schema agents emit as JSON.
 
-Example for a first-call deck (10–15 slides):
-1. Title — the hero message / outcome the meeting is about; subtitle frames for whom
-2. The shift — the macro change that makes this urgent now
-3. The cost of [problem] — make it concrete; one stat
-4. Why it persists — the structural reason, not a vendor gripe
-5. What good looks like — the reframe
-6–7. How [company] does it — mechanism at the persona's altitude (1–2 slides)
-8. Proof — a named customer outcome, attributed, routed per audience
-9. Differentiation — why this is structurally different, not another point tool
-10. The path — what engagement looks like (discovery → demo / POC → value)
-11. Close / CTA — the specific next step
+Example (first-call deck, 10–15 slides):
+Title — the hero message / outcome the meeting is about; subtitle frames for whom → {title_slide}
+The shift — the macro change that makes this urgent now      → {shift}
+The cost of [problem] — make it concrete; one stat           → {problem_cost}
+Why it persists — the structural reason, not a vendor gripe  → {why_persists}
+What good looks like — the reframe                           → {reframe}
+How [company] does it — mechanism at the persona's altitude  → {mechanism}
+Proof — a named customer outcome, attributed, routed per audience → {proof}
+Differentiation — why this is structurally different         → {differentiation}
+The path — what engagement looks like (discovery → demo / POC → value) → {path}
+Close / CTA — the specific next step                         → {cta}
 
-Optional inserts (stay within the slide cap): industry / segment slide, cooperation-with-adjacent-system slide, architecture slide for technical audiences, ROI-preview slide bridging to the business case.
+Each slide's `body` stays sparse (a statement, ≤4 bullets, or one stat / quote); `speaker_notes` carry the talk track.]
 
-Each slide's `body` stays sparse (a statement, ≤4 bullets, or one stat / quote); `speaker_notes` carry the talk track. Proof sits on the slide where its claim is earned, not in an end dump.]
-
-[Format: Numbered or tabular slide sequence. Be specific about what each slide delivers.]
+[Format: Each slide carries a {key}. Be specific about what each slide delivers. Keys are stable contract — renaming one is a breaking change for downstream consumers.]
 
 ## CTA conventions
 
