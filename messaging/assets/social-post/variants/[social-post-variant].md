@@ -28,17 +28,19 @@ Examples:
 ## Structure
 
 [Instructions:
-Full section sequence (or character/word constraints) for this variant. Annotate each section with its output key in `{snake_case}`. These keys become the body schema agents emit as JSON.
+Full section sequence (or character/word constraints) for this variant, as a single table read by both the writer and downstream production: `Guidance` is the content brief (what the section delivers or its character constraint); `Key` is the `{snake_case}` field a downstream consumer reads. Keys are stable contract — renaming one is a breaking change for downstream consumers.
 
-Example (LinkedIn):
-Hook (line 1, ≤120 chars — before "see more") → {hook}
-Setup (lines 2-4)                             → {setup}
-Substance (1-3 short paragraphs)              → {substance}
-Hashtags (≤3, at the end)                     → {hashtags}
-Close (question, takeaway, or CTA)            → {cta}
-]
+Example (LinkedIn):]
 
-[Format: Each section carries a {key} (or character constraints). Be specific about each platform's quirks. Keys are stable contract — renaming one is a breaking change for downstream consumers.]
+| # | Section | Guidance | Key |
+|---|---------|----------|-----|
+| 1 | Hook | Line 1, ≤120 chars — before "see more" | `hook` |
+| 2 | Setup | Lines 2-4 | `setup` |
+| 3 | Substance | 1-3 short paragraphs | `substance` |
+| 4 | Hashtags | ≤3, at the end | `hashtags` |
+| 5 | Close | Question, takeaway, or CTA | `cta` |
+
+[Format: one row per section, in emission order. `Guidance` is prose (what/constraint); `Key` is `{snake_case}`, stable contract.]
 
 ## CTA conventions
 

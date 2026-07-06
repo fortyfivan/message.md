@@ -43,7 +43,7 @@ Body keys are NOT declared here. The rendered content following the variant's St
 
 [Tips:
 - Declare only what the renderer actually consumes — don't mirror an exhaustive field list.
-- Keep the metadata keys consistent with the {keys} your variant Structures assume.
+- Keep the metadata keys consistent with the `Key` column in your variant's Structure table.
 - One `audience` per document — don't let a single file try to serve AE and CSM at once.]
 
 ## Variants

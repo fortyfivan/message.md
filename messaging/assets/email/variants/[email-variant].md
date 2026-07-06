@@ -28,17 +28,19 @@ Examples:
 ## Structure
 
 [Instructions:
-Full section sequence for this variant. Annotate each section with its output key in `{snake_case}`. These keys become the body schema agents emit as JSON. The `subject`/`preheader` keys double as the Output schema metadata head — keep them consistent.
+Full section sequence for this variant, as a single table read by both the writer and downstream production: `Guidance` is the content brief (what the section delivers, its purpose and length); `Key` is the `{snake_case}` field a downstream consumer reads. The `subject`/`preheader` keys double as the Output schema metadata head — keep them consistent. Keys are stable contract — renaming one is a breaking change for downstream consumers.
 
-Example (nurture):
-Subject (≤8 words; can reference prior asset)               → {subject}
-Preheader (extends subject)                                 → {preheader}
-Opening (1-2 sentences referencing recipient's last action) → {opening}
-Body (2-3 short paragraphs delivering the next useful thing) → {body}
-CTA (clear next step appropriate to funnel stage)           → {cta}
-]
+Example (nurture):]
 
-[Format: Each section carries a {key}. Be specific about each section's purpose and length. Keys are stable contract — renaming one is a breaking change for downstream consumers.]
+| # | Section | Guidance | Key |
+|---|---------|----------|-----|
+| 1 | Subject | ≤8 words; can reference prior asset | `subject` |
+| 2 | Preheader | Extends subject | `preheader` |
+| 3 | Opening | 1-2 sentences referencing recipient's last action | `opening` |
+| 4 | Body | 2-3 short paragraphs delivering the next useful thing | `body` |
+| 5 | CTA | Clear next step appropriate to funnel stage | `cta` |
+
+[Format: one row per section, in emission order. `Guidance` is prose (what/length); `Key` is `{snake_case}`, stable contract.]
 
 ## CTA conventions
 

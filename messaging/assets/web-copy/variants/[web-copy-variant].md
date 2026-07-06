@@ -28,19 +28,22 @@ Examples:
 ## Structure
 
 [Instructions:
-Full section sequence for this variant, with approximate length per section where it matters. Annotate each section with its output key in `{snake_case}`. These keys become the body schema agents emit as JSON.
+Full section sequence for this variant — one row per block, in page order, with approximate length per block where it matters. Every block shares one fixed item shape across every web-copy variant (declared in the asset's `## Output schema`): `type`, `heading`, `body`, optional `image_url`. This table declares what varies per variant — the sequence and each block's content — not new keys per block. Sequence position is stable contract; reordering or removing a row is a breaking change for downstream consumers.
 
-Example (product-page):
-Hero (capability + outcome)   → {hero}
-Key capabilities (grid/table) → {capabilities}
-How it works                  → {how_it_works}
-Inline proof (quote/metric)   → {proof}
-Integrations                  → {integrations}
-Get-started CTA               → {cta}
+SEO/GEO note: primary keyword in H1, first sentence of any definition block, and meta description; write H2/H3 headers as standalone searchable phrases.
 
-SEO/GEO note: primary keyword in H1, first sentence of any definition block, and meta description; write H2/H3 headers as standalone searchable phrases.]
+Example (product-page):]
 
-[Format: Each section carries a {key}. Be specific about what each section delivers. Keys are stable contract — renaming one is a breaking change for downstream consumers.]
+| # | `type` | `heading` guidance | `body` guidance | `image_url` |
+|---|--------|---------------------|------------------|--------------|
+| 1 | hero | Capability + outcome | — | Hero image optional |
+| 2 | capabilities | — | Grid/table of key capabilities | Icons optional |
+| 3 | how_it_works | — | — | Diagram optional |
+| 4 | proof | — | Inline quote/metric | Logo optional |
+| 5 | integrations | — | — | Logo grid optional |
+| 6 | cta | Get-started | — | — |
+
+[Format: one row per block in page order (`sections[]` index). Populate `image_url` only where that block uses one — otherwise `—`. Reordering/inserting/removing rows is a breaking change for downstream consumers.]
 
 ## CTA conventions
 

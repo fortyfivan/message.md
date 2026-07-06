@@ -29,19 +29,21 @@ Examples:
 ## Structure
 
 [Instructions:
-Full section sequence for this variant. Annotate each section with its output key in `{snake_case}`. These keys become the body schema agents emit as JSON.
+Full section sequence for this variant, as a single table read by both the writer and downstream production: `Guidance` is the content brief (what the section delivers, approximate length where it matters); `Key` is the `{snake_case}` field a downstream consumer reads. Keys are stable contract — renaming one is a breaking change for downstream consumers.
 
-Example (anchor):
-Customer snapshot (who they are, industry, scale) → {snapshot}
-Challenge (the pain in their words)               → {challenge}
-Why they chose [product]                          → {why_us}
-Implementation                                    → {implementation}
-Outcome with metrics                              → {outcome}
-Forward-looking quote                             → {forward_quote}
-Closing CTA                                       → {cta}
-]
+Example (anchor):]
 
-[Format: Each section carries a {key}. Be specific about what each section delivers, including approximate length per section where it matters. Keys are stable contract — renaming one is a breaking change for downstream consumers.]
+| # | Section | Guidance | Key |
+|---|---------|----------|-----|
+| 1 | Customer snapshot | Who they are, industry, scale | `snapshot` |
+| 2 | Challenge | The pain in their words | `challenge` |
+| 3 | Why they chose [product] | — | `why_us` |
+| 4 | Implementation | — | `implementation` |
+| 5 | Outcome | With metrics | `outcome` |
+| 6 | Forward-looking quote | — | `forward_quote` |
+| 7 | Closing CTA | The single next step | `cta` |
+
+[Format: one row per section, in emission order. `Guidance` is prose (what/length); `Key` is `{snake_case}`, stable contract.]
 
 ## CTA conventions
 

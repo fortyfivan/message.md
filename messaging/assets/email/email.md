@@ -39,7 +39,7 @@ Body keys are NOT declared here. They vary by editorial intent and are defined p
 
 [Tips:
 - Declare only what the destination actually consumes — don't mirror an exhaustive platform field list.
-- Keep the metadata keys consistent with the {keys} your variant Structures assume.
+- Keep the metadata keys consistent with the `Key` column in your variant's Structure table.
 - Where the platform injects merge tokens into `subject`/body, the contract carries the token, not the resolved value.]
 
 ## Variants

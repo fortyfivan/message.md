@@ -28,23 +28,24 @@ Examples:
 ## Structure
 
 [Instructions:
-Full slide sequence for this variant — each slide = one heading-as-claim + sparse body + speaker notes. Annotate each slide with its output key in `{snake_case}`; each slide is one `slides[]` item. These keys become the body schema agents emit as JSON.
+Full slide sequence for this variant — one row per slide, in presentation order. Every slide shares one fixed item shape across every deck variant (declared in the asset's `## Output schema`): `heading`, `body`, `speaker_notes`, optional `proof`, optional `visual`. This table declares what varies per variant — the sequence and each slide's content — not new keys per slide. Sequence position is stable contract; reordering or removing a row is a breaking change for downstream consumers.
 
-Example (first-call deck, 10–15 slides):
-Title — the hero message / outcome the meeting is about; subtitle frames for whom → {title_slide}
-The shift — the macro change that makes this urgent now      → {shift}
-The cost of [problem] — make it concrete; one stat           → {problem_cost}
-Why it persists — the structural reason, not a vendor gripe  → {why_persists}
-What good looks like — the reframe                           → {reframe}
-How [company] does it — mechanism at the persona's altitude  → {mechanism}
-Proof — a named customer outcome, attributed, routed per audience → {proof}
-Differentiation — why this is structurally different         → {differentiation}
-The path — what engagement looks like (discovery → demo / POC → value) → {path}
-Close / CTA — the specific next step                         → {cta}
+Example (first-call deck, 10–15 slides):]
 
-Each slide's `body` stays sparse (a statement, ≤4 bullets, or one stat / quote); `speaker_notes` carry the talk track.]
+| # | `heading` (the claim) | `body` (on-slide, sparse) | `speaker_notes` covers | `proof` | `visual` |
+|---|---|---|---|---|---|
+| 1 | Title — hero message / outcome | Subtitle framing who this is for | — | — | Title art / logo |
+| 2 | The shift — macro change, urgency | One-line claim | Why now, in the presenter's words | — | Trend chart (optional) |
+| 3 | The cost of [problem] | One concrete stat | Framing narrative | — | Stat callout |
+| 4 | Why it persists | Structural reason, ≤4 bullets | Non-vendor-gripe framing | — | — |
+| 5 | What good looks like | The reframe statement | — | — | Before/after diagram |
+| 6 | How [company] does it | Mechanism, persona-altitude | Depth per persona | — | Architecture diagram |
+| 7 | Proof | Named outcome + metric | Attribution, audience routing | Yes | Logo / quote card |
+| 8 | Differentiation | ≤4 bullets, structural | — | — | Comparison table |
+| 9 | The path | Stage sequence (discovery → demo / POC → value) | Engagement detail | — | Timeline graphic |
+| 10 | Close / CTA | The specific next step | — | — | CTA card |
 
-[Format: Each slide carries a {key}. Be specific about what each slide delivers. Keys are stable contract — renaming one is a breaking change for downstream consumers.]
+[Format: one row per slide in emission order (`slides[]` index). Populate `proof`/`visual` columns only where that slide uses them — otherwise `—`. Reordering/inserting/removing rows is a breaking change for downstream consumers.]
 
 ## CTA conventions
 

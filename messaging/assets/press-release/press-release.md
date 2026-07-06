@@ -38,7 +38,7 @@ Body keys are NOT declared here. They vary by editorial intent and are defined p
 
 [Tips:
 - Declare only what the destination actually consumes — don't mirror an exhaustive distribution-platform field list.
-- Keep the metadata keys consistent with the {keys} your variant Structures assume.
+- Keep the metadata keys consistent with the `Key` column in your variant's Structure table.
 - Keep dates ISO 8601 in the contract even though the dateline renders them long-form.]
 
 ## Variants

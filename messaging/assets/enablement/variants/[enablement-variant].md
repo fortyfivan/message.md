@@ -29,18 +29,20 @@ Examples:
 ## Structure
 
 [Instructions:
-Full structure for this variant — the section or block pattern, with the in-field format. Annotate each section with its output key in `{snake_case}`. These keys become the body schema agents emit as JSON. Enablement carries no marketing CTA — the `{cta}` slot is the rep's next field move (a follow-up question, demo moment, asset to send, or SE / deal-desk handoff).
+Full structure for this variant — the section or block pattern, with the in-field format — as a single table read by both the writer and downstream production: `Guidance` is the content brief (what each part delivers and its in-field rendering); `Key` is the `{snake_case}` field a downstream consumer reads. Enablement carries no marketing CTA — the `cta` row is the rep's next field move (a follow-up question, demo moment, asset to send, or SE / deal-desk handoff). Keys are stable contract — renaming one is a breaking change for downstream consumers.
 
-Example (battlecard):
-Their pitch                                    → {their_pitch}
-Where we win                                   → {where_we_win}
-Where they're strong (honest)                  → {their_strengths}
-Objection responses ("when they say X, say Y") → {objections}
-Proof to cite                                  → {proof}
-Trap-setting questions (the next move)         → {cta}
-]
+Example (battlecard):]
 
-[Format: Each section carries a {key}. Be specific about what each part delivers and the in-field rendering. Keys are stable contract — renaming one is a breaking change for downstream consumers.]
+| # | Section | Guidance | Key |
+|---|---------|----------|-----|
+| 1 | Their pitch | — | `their_pitch` |
+| 2 | Where we win | — | `where_we_win` |
+| 3 | Where they're strong | Honest | `their_strengths` |
+| 4 | Objection responses | "When they say X, say Y" | `objections` |
+| 5 | Proof to cite | — | `proof` |
+| 6 | Trap-setting questions | The next move | `cta` |
+
+[Format: one row per section, in emission order. `Guidance` is prose (what/rendering); `Key` is `{snake_case}`, stable contract.]
 
 ## CTA conventions
 

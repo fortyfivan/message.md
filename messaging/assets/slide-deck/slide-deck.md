@@ -47,7 +47,7 @@ Body keys are NOT declared here. The slide sequence varies by editorial intent a
 
 [Tips:
 - Declare only what the renderer actually consumes — don't mirror an exhaustive field list.
-- Keep the metadata keys consistent with the {keys} your variant Structures assume.
+- Keep the metadata keys consistent with the `Key` column in your variant's Structure table.
 - This renders to slides, not a CMS — keep on-slide `body` sparse so it fits the template; depth lives in `speaker_notes`.]
 
 ## Variants

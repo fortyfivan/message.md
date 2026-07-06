@@ -29,18 +29,20 @@ Examples:
 ## Structure
 
 [Instructions:
-Full section sequence for this variant. Annotate each section with its output key in `{snake_case}`. These keys become the body schema agents emit as JSON.
+Full section sequence for this variant — one row per block, in page order. Every block shares one fixed item shape across every landing-page variant (declared in the asset's `## Output schema`): `type`, `heading`, `body`, optional `image_url`. This table declares what varies per variant — the sequence and each block's content — not new keys per block. For flat-HTML CMSs the body collapses to a single `body` key instead of a `sections[]` array — note that here if it applies. Sequence position is stable contract; reordering or removing a row is a breaking change for downstream consumers.
 
-Example (campaign-destination):
-Hero (offer + CTA above fold) → {hero}
-Problem (persona pain)        → {problem}
-Solution (1-2 paragraphs)     → {solution}
-Differentiators (3 cards)     → {differentiators}
-Proof (single quote/stat)     → {proof}
-CTA repeat                    → {cta}
-]
+Example (campaign-destination):]
 
-[Format: Each section carries a {key}. Be specific about what each section delivers. Keys are stable contract — renaming one is a breaking change for downstream consumers.]
+| # | `type` | `heading` guidance | `body` guidance | `image_url` |
+|---|--------|---------------------|------------------|--------------|
+| 1 | hero | Offer, above the fold | CTA framing (CTA itself rendered per CTA conventions) | Hero image/video optional |
+| 2 | problem | Persona pain, named | — | — |
+| 3 | solution | — | 1-2 paragraphs | — |
+| 4 | differentiators | — | 3 cards | Card icons optional |
+| 5 | proof | — | Single quote/stat | Logo optional |
+| 6 | cta_repeat | — | Repeats the hero CTA | — |
+
+[Format: one row per block in page order (`sections[]` index, or the flat-body equivalent). Populate `image_url` only where that block uses one — otherwise `—`. Reordering/inserting/removing rows is a breaking change for downstream consumers.]
 
 ## CTA conventions
 

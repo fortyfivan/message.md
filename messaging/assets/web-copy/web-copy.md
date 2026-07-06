@@ -45,7 +45,7 @@ Body keys are NOT declared here. They vary by editorial intent and are defined p
 
 [Tips:
 - Declare only what the destination actually consumes — don't mirror an exhaustive CMS field list.
-- Keep the metadata keys consistent with the {keys} your variant Structures assume.
+- Keep the metadata keys consistent with the `Key` column in your variant's Structure table.
 - For SEO fields, note whether the CMS derives meta from the H1/excerpt or wants them explicit.]
 
 ## Variants

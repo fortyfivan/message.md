@@ -30,19 +30,21 @@ Examples:
 ## Structure
 
 [Instructions:
-Full section sequence for this variant. Annotate each section with its output key in `{snake_case}`. These keys become the body schema agents emit as JSON.
+Full section sequence for this variant, as a single table read by both the writer and downstream production: `Guidance` is the content brief (what the section delivers, approximate length — whitepaper length varies widely, 3,000-10,000 words); `Key` is the `{snake_case}` field a downstream consumer reads. Keys are stable contract — renaming one is a breaking change for downstream consumers.
 
-Example (research):
-Executive Summary (1 page)                          → {exec_summary}
-Methodology (sample, time window, instruments, limitations) → {methodology}
-Key Findings (3-5 H2 sections, data + commentary)   → {findings}
-Implications                                        → {implications}
-Appendix (raw tables)                               → {appendix}
-Author bio                                          → {author_bio}
-Download / briefing CTA                             → {cta}
-]
+Example (research):]
 
-[Format: Each section carries a {key}. Specify approximate length per section since whitepaper length varies widely (3,000-10,000 words). Keys are stable contract — renaming one is a breaking change for downstream consumers.]
+| # | Section | Guidance | Key |
+|---|---------|----------|-----|
+| 1 | Executive Summary | 1 page | `exec_summary` |
+| 2 | Methodology | Sample, time window, instruments, limitations | `methodology` |
+| 3 | Key Findings | 3-5 H2 sections, data + commentary | `findings` |
+| 4 | Implications | — | `implications` |
+| 5 | Appendix | Raw tables | `appendix` |
+| 6 | Author bio | — | `author_bio` |
+| 7 | Download / briefing CTA | — | `cta` |
+
+[Format: one row per section, in emission order. `Guidance` is prose (what/length); `Key` is `{snake_case}`, stable contract.]
 
 ## CTA conventions
 

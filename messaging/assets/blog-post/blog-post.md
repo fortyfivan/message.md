@@ -38,11 +38,13 @@ The structured contract for this asset's JSON output. This prose section is the 
 Examples:
 - Core content: `title`, `slug`, `excerpt`, `author`, and — where the destination needs them — `published_date`, `canonical_url`
 - SEO: `seo_title`, `seo_description` (or CMS-derived from title/excerpt)
-- Controlled vocab: the fixed `categories` list; `tags`]
+- Controlled vocab: the fixed `categories` list; `tags`
+
+Body keys are NOT declared here. They vary by editorial intent and are defined per variant, annotated on each variant's Structure section. The envelope owns the invariant head; the variant owns the body.]
 
 [Tips:
 - Declare only what the destination actually consumes — don't mirror an exhaustive CMS field list.
-- Keep the metadata keys consistent with the {keys} your variant Structures assume.
+- Keep the metadata keys consistent with the `Key` column in your variant's Structure table.
 - For SEO fields, note whether the CMS derives `seo_title`/`seo_description` from title/excerpt or wants them explicit.]
 
 ## Variants

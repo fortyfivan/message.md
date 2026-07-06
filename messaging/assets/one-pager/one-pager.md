@@ -38,7 +38,7 @@ Body keys are NOT declared here. They vary by editorial intent and are defined p
 
 [Tips:
 - Declare only what the renderer actually consumes — don't mirror an exhaustive field list.
-- Keep the metadata keys consistent with the {keys} your variant Structures assume.
+- Keep the metadata keys consistent with the `Key` column in your variant's Structure table.
 - This renders to a fixed single page — note any field length caps the template enforces.]
 
 ## Variants

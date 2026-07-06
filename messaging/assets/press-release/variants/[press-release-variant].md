@@ -27,18 +27,7 @@ Examples:
 ## Structure
 
 [Instructions:
-The shared wire-format spine, with per-variant emphasis. Annotate each section with its output key in `{snake_case}`. These keys become the body schema agents emit as JSON. `headline`/`subhead`/`dateline`/`boilerplate` double as the Output schema metadata head — keep them consistent. A press release carries no marketing CTA, so the `{cta}` slot is the media-contact close.
-
-Wire-format spine (all variants):
-Headline — declarative, factual, ≤12 words             → {headline}
-Subhead — secondary line clarifying scope/significance → {subhead}
-Dateline — `CITY — Month Day, Year —`                  → {dateline}
-Lede (1 paragraph) — who, what, why now                → {lede}
-Detail (2-3 paragraphs) — context, capability, market frame → {detail}
-Executive quote — attributed to a company leader       → {exec_quote}
-Second quote (optional) — a second perspective         → {second_quote}
-Boilerplate — pulled from `profile.md` boilerplate      → {boilerplate}
-Media contact — the close; name and email              → {cta}
+The shared wire-format spine, with per-variant emphasis, as a single table read by both the writer and downstream production: `Guidance` is the content brief (what each section delivers); `Key` is the `{snake_case}` field a downstream consumer reads. `headline`/`subhead`/`dateline`/`boilerplate` double as the Output schema metadata head — keep them consistent. A press release carries no marketing CTA, so the `cta` row is the media-contact close. Keys are stable contract — renaming one is a breaking change for downstream consumers.
 
 Per-variant emphasis:
 - Company-news: lede states the milestone + why-now; second quote often an investor/board member (funding) or the named executive (appointment)
@@ -46,7 +35,19 @@ Per-variant emphasis:
 - Partnership: lede frames the joint value; detail gives both parties balanced billing; two quotes, one per partner; boilerplate for both companies
 ]
 
-[Format: Each section carries a {key}. Be specific about what each section delivers. Keys are stable contract — renaming one is a breaking change for downstream consumers.]
+| # | Section | Guidance | Key |
+|---|---------|----------|-----|
+| 1 | Headline | Declarative, factual, ≤12 words | `headline` |
+| 2 | Subhead | Secondary line clarifying scope/significance | `subhead` |
+| 3 | Dateline | `CITY — Month Day, Year —` | `dateline` |
+| 4 | Lede | 1 paragraph — who, what, why now | `lede` |
+| 5 | Detail | 2-3 paragraphs — context, capability, market frame | `detail` |
+| 6 | Executive quote | Attributed to a company leader | `exec_quote` |
+| 7 | Second quote | Optional — a second perspective | `second_quote` |
+| 8 | Boilerplate | Pulled from `profile.md` boilerplate | `boilerplate` |
+| 9 | Media contact | The close; name and email | `cta` |
+
+[Format: one row per section, in emission order. `Guidance` is prose (what each section delivers); `Key` is `{snake_case}`, stable contract.]
 
 ## CTA conventions
 
