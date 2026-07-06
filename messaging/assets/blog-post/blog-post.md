@@ -49,8 +49,14 @@ Examples:
 
 Catalog of variants this asset supports. Files live in `variants/[slug].md`.
 
-[Instructions: Populate one row per file in `variants/` when authoring — agents treat this table as the authoritative variant index]
+[Instructions: Populate one row per file in `variants/` when authoring — agents treat this table as the authoritative variant index. `Load When` is a compact trigger phrase (a few words, styled like the Pillars/Collections `Load When` columns in MESSAGE.md) that lets the agent choose the right variant file before loading it — not the 2-4 sentence prose that previously lived in each variant's `## When to use` section.
 
-| Variant | File | Description |
-|---------|------|-------------|
-|         |      |             |
+Examples for this asset:
+- use-case — Customer pain is acute and named
+- thought-leadership — Category inflection or emerging trend
+- product-announcement — New feature or product update
+- tactical-guide — Operator-focused tactical walkthrough]
+
+| Variant | File | Description | Load When |
+|---------|------|-------------|-----------|
+|         |      |             |           |

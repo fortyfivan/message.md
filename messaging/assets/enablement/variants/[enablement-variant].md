@@ -9,23 +9,6 @@ last-reviewed: ""
 
 [Instructions: One-line description of this variant — what makes it different from siblings in this asset's `variants/` directory. Be explicit about the boundary with adjacent variants (e.g., a discovery guide is the question set, not the playbook's qualification gate or the FAQ's rep-ready answers).]
 
-## When to use
-
-[Instructions:
-Distinguish this variant from siblings. When does a rep / enabler reach for this variant vs. another in this asset's `variants/` directory? Examples:
-- Single-page fight card for a specific competitor encounter → battlecard
-- Step-by-step field manual for executing a GTM play, with discovery frameworks → playbook
-- Grouped Q&A arming reps and CS with rep-ready answers → faq
-- One-page value-pillar cheat sheet for a play theme → message-map
-- Timed spoken script for an internal walkthrough recording → enablement-script
-- Modular cold-call script — hook, value prop, response branches, meeting ask → talk-track
-- Grouped discovery questions that surface gaps, with fit and red-flag signals → discovery-guide
-- Prescriptive show-and-say demo choreography for one use case → demo-script
-
-Note the audience (AE / SDR / SE / CSM), the deal stage, and what the variant pairs with (e.g., a discovery guide pairs to a play and is the AE companion to the deck and demo script).]
-
-[Format: 2-4 sentences. Specific triggers, not vague situations.]
-
 ## Voice notes
 
 [Instructions:
@@ -82,7 +65,7 @@ Examples (enablement):
 - Scenario-driven — organized around situations reps hit, not abstract categories
 - Routed — every entry ends in a next move (question, demo moment, asset, or handoff), never a dead end
 - Sourced — claims / pains / value map to `position.md`, `proof.md`, `people.md`; nothing invented
-- Naming accuracy — every product / term matches the profile.md Glossary; cooperating systems handled as cooperation, not displacement
+- Naming accuracy — every product / term matches the MESSAGE.md Glossary; cooperating systems handled as cooperation, not displacement
 - (Discovery-guide) every question is askable as phrased and carries both a fit signal and a red-flag signal
 ]
 

@@ -9,18 +9,6 @@ last-reviewed: ""
 
 [Instructions: One-line description of this variant — which platform/form factor and what makes it different from siblings.]
 
-## When to use
-
-[Instructions:
-Distinguish this variant from siblings. When does a writer reach for this variant vs. another in this asset's `variants/` directory? Examples:
-- Long-form prose, professional audience, executive amplification → linkedin
-- Punchy declarative statement, ≤280 chars, real-time reactions → twitter-x-post
-- Multi-part narrative or breakdown of a single idea → twitter-x-thread (or threads-bsky)
-- Practitioner community, technical credibility, expects discussion → reddit
-]
-
-[Format: 2-4 sentences. Specific triggers, not vague situations.]
-
 ## Voice notes
 
 [Instructions:

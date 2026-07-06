@@ -9,19 +9,6 @@ last-reviewed: ""
 
 [Instructions: One-line description of this variant — what makes it different from siblings in this asset's `variants/` directory.]
 
-## When to use
-
-[Instructions:
-Distinguish this variant from siblings. When does a presenter reach for this variant vs. another in this asset's `variants/` directory? Examples:
-- Booked first meeting; take a prospect from problem to platform in 15–20 min of talk time → first-call
-- Joint go-to-market with a partner; co-branded → partner
-- Exec / board audience, outcomes only → executive-briefing
-- Technical evaluator, architecture / mechanism depth → technical deep-dive
-
-Note where the deck sits in the sequence (e.g., follows discovery, precedes demo / business case) and who presents it vs. who the single target persona is.]
-
-[Format: 2-4 sentences. Specific triggers, not vague situations.]
-
 ## Voice notes
 
 [Instructions:
@@ -83,7 +70,7 @@ Examples (slide deck):
 - Proof sits on the slide where its claim is earned, attributed and routed per audience; stats within `proof.md` ranges, no invented precision
 - Differentiation is structural and positioned alongside adjacent categories — never displacement against a named cooperating system
 - Close names one specific, stage-matched next step — not "contact sales," not a bare "book a demo"
-- Naming accuracy: every product / term matches the profile.md Glossary
+- Naming accuracy: every product / term matches the MESSAGE.md Glossary
 ]
 
 [Format: testable bullet rules. Omit this section if the variant has no tells beyond the global voice gate.]

@@ -9,18 +9,6 @@ last-reviewed: ""
 
 [Instructions: One-line description of this variant — what makes it different from siblings in the same asset's `variants/` directory.]
 
-## When to use
-
-[Instructions:
-Distinguish this variant from siblings. When does a writer reach for this variant vs. another in this asset's `variants/` directory? Examples:
-- Flagship reference customer; full problem→outcome narrative with metrics → anchor case study
-- Short proof snippet for a logo wall, sales deck, or inline web proof → mini-story
-- Written companion to a recorded video testimonial; transcript-derived → video-transcript companion
-- Industry/segment-framed story for a named vertical → vertical spotlight
-]
-
-[Format: 2-4 sentences. Specific triggers, not vague situations.]
-
 ## Voice notes
 
 [Instructions:

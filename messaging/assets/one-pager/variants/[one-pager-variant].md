@@ -9,19 +9,6 @@ last-reviewed: ""
 
 [Instructions: One-line description of this variant — what makes it different from siblings in this asset's `variants/` directory.]
 
-## When to use
-
-[Instructions:
-Distinguish this variant from siblings. When does a writer reach for this variant vs. another in this asset's `variants/` directory? Examples:
-- Sales: champion needs to hand a one-page pitch to internal stakeholders → sales
-- Competitive moment, head-to-head selection → battlecard
-- Technical evaluator needs capability + spec reference → datasheet
-- Joint solution with a partner; partner team needs co-branded leave-behind → partner-overview
-- Executive briefing or board-level summary → executive-brief
-]
-
-[Format: 2-4 sentences. Specific triggers, not vague situations.]
-
 ## Voice notes
 
 [Instructions:

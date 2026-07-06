@@ -9,18 +9,6 @@ last-reviewed: ""
 
 [Instructions: One-line description of this variant — what makes it different from siblings in the same asset's `variants/` directory.]
 
-## When to use
-
-[Instructions:
-Distinguish this variant from siblings. When does a writer reach for this variant vs. another in this asset's `variants/` directory? Examples:
-- Customer pain is acute and named → use-case
-- Category inflection or emerging trend → thought-leadership
-- New feature or product update → product-announcement
-- Operator-focused tactical walkthrough → tactical guide
-]
-
-[Format: 2-4 sentences. Specific triggers, not vague situations.]
-
 ## Voice notes
 
 [Instructions:

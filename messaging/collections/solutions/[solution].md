@@ -47,7 +47,7 @@ Describe the scenario from the buyer's perspective — where they are today, wha
 ### Unique Approach
 
 [Instructions:
-How this solution works and what makes it different from alternative approaches to the same problem. This should connect to specific product capabilities and trace back to differentiators in position.md.]
+How this solution works and what makes it different from alternative approaches to the same problem. This should connect to specific product capabilities and trace back to differentiators in pitch.md.]
 
 [Tips:
 - Lead with the approach, not the product — "we solve this by [method]" not "our product has [feature]"

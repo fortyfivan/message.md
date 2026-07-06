@@ -46,8 +46,15 @@ Body keys are NOT declared here. They vary by editorial intent and are defined p
 
 Catalog of variants this asset supports. Files live in `variants/[slug].md`.
 
-[Instructions: Populate one row per file in `variants/` when authoring — agents treat this table as the authoritative variant index]
+[Instructions: Populate one row per file in `variants/` when authoring — agents treat this table as the authoritative variant index. `Load When` is a compact trigger phrase (a few words, styled like the Pillars/Collections `Load When` columns in MESSAGE.md) that lets the agent choose the right variant file before loading it — not the 2-4 sentence prose that previously lived in each variant's `## When to use` section.
 
-| Variant | File | Description |
-|---------|------|-------------|
-|         |      |             |
+Examples for this asset:
+- nurture — Lead in active consideration, already engaged
+- outbound — Cold prospect, trigger event or persona-pain hook
+- promo — Time-bound offer, event invite, or launch
+- lifecycle — Renewal, usage milestone, anniversary, churn risk
+- transactional-companion — Operational message tied to product event]
+
+| Variant | File | Description | Load When |
+|---------|------|-------------|-----------|
+|         |      |             |           |

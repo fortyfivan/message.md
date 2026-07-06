@@ -8,7 +8,7 @@
 
 ## Always-On Foundation
 
-`MESSAGE.md` loads automatically at session start as foundational context. It provides:
+Read `MESSAGE.md` before starting any messaging or content task — it is the foundational context everything else builds on. (In Claude Code, add an `@MESSAGE.md` import to this file to load it automatically at session start.) It provides:
 
 - Company attributes (altitude-setters)
 - Glossary (cross-cutting terminology)
@@ -29,6 +29,6 @@ After MESSAGE.md, the agent loads additional content based on task context. The 
 
 **Default loading behavior:**
 
-- **Pillars** load per the catalog's `Load When` column. Profile and Pitch load always. Position, People, and Proof load by default for marketing content. Portfolio loads when content references products.
+- **Pillars** load per the catalog's `Load When` column — the catalog is authoritative. Profile and Pitch load always.
 - **Collections** load per the catalog's `Load When` column. Each collection loads when content references its specific entity type (personas when a named role/tier appears, competitors when a named competitor appears, etc.).
-- **Assets** load when a specific asset is referenced by content type. Variants under the asset's `variants/` directory load when a specific variant is named.
+- **Assets** load when generating content. Variants under the asset's `variants/` directory load per the `Load When` column in that asset's own `## Variants` table — the same mechanism as the Pillars/Collections `Load When` columns — not only when a specific variant is named.

@@ -9,19 +9,6 @@ last-reviewed: ""
 
 [Instructions: One-line description of this variant — what makes it different from siblings in this asset's `variants/` directory.]
 
-## When to use
-
-[Instructions:
-Distinguish this variant from siblings. When does a writer reach for this variant vs. another in this asset's `variants/` directory? Examples:
-- Map to a specific product or platform service → product-page
-- Map to a GTM solution / use case → solution-page
-- Target a commercial-intent "[us] vs [competitor]" query → comparison-page
-- Target informational-intent "what is X" / "X explained" queries → topic-page
-- Single-offer conversion capture (gated asset or demo request) → landing-page
-]
-
-[Format: 2-4 sentences. Specific triggers, not vague situations.]
-
 ## Voice notes
 
 [Instructions:
@@ -81,7 +68,7 @@ Examples (web copy):
 - Headers tell the story: reading only the H1/H2s conveys the value proposition
 - One primary CTA per section; no competing actions at the same scroll depth
 - Proof sits inline next to the claim, not deferred to another page
-- Naming accuracy: every product/term matches the profile.md Glossary
+- Naming accuracy: every product/term matches the MESSAGE.md Glossary
 - (Topic-page) Definition block is a 2–4 sentence, snippet-extractable answer to the core question; commercial section is ≤20% of length and no longer than any educational section
 - (Comparison-page) Every competitive claim is factual and defensible
 ]

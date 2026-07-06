@@ -45,8 +45,15 @@ Body keys are NOT declared here. They vary by editorial intent and are defined p
 
 Catalog of variants this asset supports. Files live in `variants/[slug].md`.
 
-[Instructions: Populate one row per file in `variants/` when authoring — agents treat this table as the authoritative variant index]
+[Instructions: Populate one row per file in `variants/` when authoring — agents treat this table as the authoritative variant index. `Load When` is a compact trigger phrase (a few words, styled like the Pillars/Collections `Load When` columns in MESSAGE.md) that lets the agent choose the right variant file before loading it — not the 2-4 sentence prose that previously lived in each variant's `## When to use` section.
 
-| Variant | File | Description |
-|---------|------|-------------|
-|         |      |             |
+Examples for this asset:
+- sales — Champion needs an internal pitch leave-behind
+- battlecard — Competitive, head-to-head selection moment
+- datasheet — Technical evaluator needs capability + spec reference
+- partner-overview — Joint solution needs co-branded leave-behind
+- executive-brief — Executive or board-level summary]
+
+| Variant | File | Description | Load When |
+|---------|------|-------------|-----------|
+|         |      |             |           |

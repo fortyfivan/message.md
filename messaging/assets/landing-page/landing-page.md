@@ -47,8 +47,16 @@ Body keys are NOT declared here. They vary by editorial intent and are defined p
 
 Catalog of variants this asset supports. Files live in `variants/[slug].md`.
 
-[Instructions: Populate one row per file in `variants/` when authoring — agents treat this table as the authoritative variant index]
+[Instructions: Populate one row per file in `variants/` when authoring — agents treat this table as the authoritative variant index. `Load When` is a compact trigger phrase (a few words, styled like the Pillars/Collections `Load When` columns in MESSAGE.md) that lets the agent choose the right variant file before loading it — not the 2-4 sentence prose that previously lived in each variant's `## When to use` section.
 
-| Variant | File | Description |
-|---------|------|-------------|
-|         |      |             |
+Examples for this asset:
+- campaign-destination — Campaign traffic, single offer
+- product-page — Persistent, evergreen product overview
+- webinar — Live or on-demand webinar registration
+- event — Conference or field event registration
+- gated-asset — Gated download (paper, guide, calculator)
+- partner-co-marketing — Joint go-to-market with a partner]
+
+| Variant | File | Description | Load When |
+|---------|------|-------------|-----------|
+|         |      |             |           |

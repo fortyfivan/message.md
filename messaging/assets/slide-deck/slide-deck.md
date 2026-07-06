@@ -22,7 +22,7 @@ Specify the company's deck-wide standards that hold across variants:
 - Proof inline, at the moment it's earned: a named quote / analyst line sits on the slide where its claim is made, not in an end-of-deck proof dump
 - Persona-bound: one persona per deck; match altitude to the single target reader
 - Messaging-grounded: every claim / differentiator / proof traces to the messaging house (`pitch.md`, `position.md`, `portfolio.md`, `proof.md`) — introduce no positioning not supported there
-- Naming discipline: match the `messaging/pillars/profile.md` Glossary exactly (preferred terms over banned synonyms; excluded / roadmap terms)
+- Naming discipline: match the MESSAGE.md Glossary exactly (preferred terms over banned synonyms; excluded / roadmap terms)
 - Competitive framing rules that recur across decks (e.g., position alongside adjacent categories, never against)
 - Proof / analyst routing: which analyst recognitions and customer references are cleared for which audiences, and where quantitative outcomes come from (`proof.md` ranges — never invent precision)]
 
@@ -54,8 +54,14 @@ Body keys are NOT declared here. The slide sequence varies by editorial intent a
 
 Catalog of variants this asset supports. Files live in `variants/[slug].md`.
 
-[Instructions: Populate one row per file in `variants/` when authoring — agents treat this table as the authoritative variant index]
+[Instructions: Populate one row per file in `variants/` when authoring — agents treat this table as the authoritative variant index. `Load When` is a compact trigger phrase (a few words, styled like the Pillars/Collections `Load When` columns in MESSAGE.md) that lets the agent choose the right variant file before loading it — not the 2-4 sentence prose that previously lived in each variant's `## When to use` section.
 
-| Variant | File | Description |
-|---------|------|-------------|
-|         |      |             |
+Examples for this asset:
+- first-call — Booked first meeting, problem-to-platform in 15-20 min
+- partner — Joint go-to-market, co-branded deck
+- executive-briefing — Exec/board audience, outcomes only
+- technical-deep-dive — Technical evaluator, architecture depth]
+
+| Variant | File | Description | Load When |
+|---------|------|-------------|-----------|
+|         |      |             |           |

@@ -9,20 +9,6 @@ last-reviewed: ""
 
 [Instructions: One-line description of this variant — what makes it different from siblings in this asset's `variants/` directory.]
 
-## When to use
-
-[Instructions:
-Distinguish this variant from siblings. When does a writer reach for this variant vs. another in this asset's `variants/` directory? Examples:
-- Primary research (survey, study, panel data) with novel data → research
-- Strategic argument or deep dive on a market/category topic → topic
-- Comparative data across vendors, segments, or time → benchmark
-- Contrarian or opinionated stance with evidence → point-of-view
-- Analyst-style format mimicking Gartner / Forrester / IDC structure → analyst-brief
-- Standards, compliance, or technical reference with practical guidance → technical-guide / regulatory
-]
-
-[Format: 2-4 sentences. Specific triggers, not vague situations.]
-
 ## Voice notes
 
 [Instructions:

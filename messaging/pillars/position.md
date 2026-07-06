@@ -3,7 +3,7 @@ title: ""
 updated: ""
 ---
 
-# Market Space
+# Position
 
 This pillar defines the market landscape, the category it occupies, how it's positioned relative to alternatives. Every competitive contrast, every differentiator, every "why us" claim should trace back to this pillar.
 

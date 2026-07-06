@@ -116,7 +116,7 @@ For each pattern:
 [Tips:
 - Frame as "Unlike [alternative's approach], we [our approach]" — contrast approaches, not features
 - Each message should connect to a specific weakness or win scenario above
-- Do not introduce new differentiation claims here that aren't grounded in position.md]
+- Do not introduce new differentiation claims here that aren't grounded in pitch.md]
 
 [Format:
 Numbered list of 2-3 contrast statements]

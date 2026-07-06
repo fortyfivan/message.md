@@ -9,20 +9,6 @@ last-reviewed: ""
 
 [Instructions: One-line description of this variant — what makes it different from siblings in this asset's `variants/` directory.]
 
-## When to use
-
-[Instructions:
-Distinguish this variant from siblings. When does a writer reach for this variant vs. another in this asset's `variants/` directory? Examples:
-- Campaign traffic destination with single offer → campaign-destination
-- Persistent product overview, evergreen → product-page
-- Live or on-demand webinar registration → webinar
-- Conference, field event, hosted event registration → event
-- Gated download (paper, guide, calculator, benchmark) → gated-asset
-- Joint go-to-market with a partner → partner-co-marketing
-]
-
-[Format: 2-4 sentences. Specific triggers, not vague situations.]
-
 ## Voice notes
 
 [Instructions:

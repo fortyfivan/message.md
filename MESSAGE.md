@@ -51,7 +51,7 @@ last-reviewed: "[Instructions: ISO date, YYYY-MM-DD.]"
 
 
 Do NOT include:
-- Product names → `pillars/portfolio.md`
+- Product names → `collections/products/`
 - Competitor names → `collections/competitors/`
 - Customer names → `collections/stories/`
 - Persona role titles → `collections/personas/`
@@ -87,20 +87,31 @@ Aim for 10-20 entries. More than 30 usually means the glossary is duplicating co
 | Strategic shape  | [Instructions: Customize. Common values: new-product-introduction, strategic-event, brand-campaign, thought-leadership, etc.] |
 | Content lens     | [Instructions: Customize. Common values: Awareness, Acquisition, Activation, Adoption, Advocacy, Amplification]               |
 
+### Assembly Guidance
+
+[Instructions: Make each dimension operational by declaring its assembly effect — what a value changes about what gets loaded or how content is postured. One row per value that changes agent behavior; a value with no assembly effect is descriptive only and should be cut from Dimensions. The rows below are examples — replace with your values.]
+
+| Dimension        | Value                     | Assembly effect                                                                        |
+|------------------|---------------------------|----------------------------------------------------------------------------------------|
+| Compelling event | competitor-news           | Load the named competitor profile; contrast posture grounded in Pitch differentiators  |
+| Market moment    | regulatory-shift          | Load affected segment profiles; lead with urgency and compliance framing               |
+| Strategic shape  | new-product-introduction  | Emphasize Portfolio and product profiles; Position for category framing                |
+| Content lens     | Awareness                 | Category-narrative altitude; minimize product specifics; soft CTA                      |
+
 ---
 
 ## Pillars
 
 *Top-level elements that cover the company's full positioning and messaging domain.*
 
-| Pillar        | File                             | Description                                  | Load When                                 |
-|---------------|----------------------------------|----------------------------------------------|-------------------------------------------|
-| **Profile**   | `messaging/pillars/profile.md`   | Key statements and brand voice.              | Always                                    |
-| **Pitch**     | `messaging/pillars/pitch.md`     | Strategic narrative and talking points       | Always                                    |
-| **Position**  | `messaging/pillars/position.md`  | Category claims and differentiators          | Research and understanding position       |
-| **People**    | `messaging/pillars/people.md`    | Audience framing and relevant messages       | Writing for a specific audience altitude  |
-| **Portfolio** | `messaging/pillars/portfolio.md` | Product overview and capabilities            | References to specific products           |
-| **Proof**     | `messaging/pillars/proof.md`     | Customer wins, analyst recognition           | Backing claims with evidence              |
+| Pillar        | File                             | Description                                        | Load When                                                     |
+|---------------|----------------------------------|----------------------------------------------------|---------------------------------------------------------------|
+| **Profile**   | `messaging/pillars/profile.md`   | Key statements and brand voice.                    | Always                                                        |
+| **Pitch**     | `messaging/pillars/pitch.md`     | Strategic narrative, UVPs, and differentiators     | Always                                                        |
+| **Position**  | `messaging/pillars/position.md`  | Market landscape, category claims, and positioning | Marketing content (default); competitive or category framing  |
+| **People**    | `messaging/pillars/people.md`    | Audience framing and relevant messages             | Marketing content (default); writing for a specific audience  |
+| **Portfolio** | `messaging/pillars/portfolio.md` | Product overview and capabilities                  | References to specific products                               |
+| **Proof**     | `messaging/pillars/proof.md`     | Customer wins, analyst recognition                 | Marketing content (default); backing claims with evidence     |
 
 ---
 
@@ -109,6 +120,8 @@ Aim for 10-20 entries. More than 30 usually means the glossary is duplicating co
 *Individual profiles loaded on-demand for focus and relevance.*
 
 Collection items are files named with lowercase-hyphenated slugs (e.g., `ciso.md`, `acme-corp.md`); cross-reference tables point to them by repo-relative path (e.g., `messaging/collections/personas/ciso.md`). Each item's frontmatter `aliases` list carries the alternate names that should route to it.
+
+Each item file's frontmatter is the source of truth for its attributes (type, tier, status, etc.); the reference tables in pillars are routing indexes derived from it. When a table and an item's frontmatter disagree, the item file wins — update the table.
 
 | Collection      | Path                                 | Description                                                        | Load When        |
 |-----------------|--------------------------------------|--------------------------------------------------------------------|------------------|

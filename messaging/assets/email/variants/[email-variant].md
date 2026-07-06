@@ -9,19 +9,6 @@ last-reviewed: ""
 
 [Instructions: One-line description of this variant — what makes it different from siblings in this asset's `variants/` directory.]
 
-## When to use
-
-[Instructions:
-Distinguish this variant from siblings. When does a writer reach for this variant vs. another in this asset's `variants/` directory? Examples:
-- Lead in active consideration; recipient has earned attention by engaging → nurture
-- Cold prospect; recipient has not engaged; trigger event or persona-pain hook → outbound
-- Time-bound offer, event invitation, product launch announcement → promo
-- Lifecycle event (renewal window, usage milestone, anniversary, churn risk) → lifecycle
-- Operational message paired with product event (signup, password reset) → transactional-companion
-]
-
-[Format: 2-4 sentences. Specific triggers, not vague situations.]
-
 ## Voice notes
 
 [Instructions:

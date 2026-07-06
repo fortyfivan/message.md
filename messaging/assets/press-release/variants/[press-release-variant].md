@@ -9,17 +9,6 @@ last-reviewed: ""
 
 [Instructions: One-line description of this variant — what makes it different from siblings in this asset's `variants/` directory.]
 
-## When to use
-
-[Instructions:
-Distinguish this variant from siblings. When does a writer reach for this variant vs. another in this asset's `variants/` directory? Examples:
-- Corporate milestone — funding round, executive appointment, customer/logo win, award, expansion → company-news
-- New product, major feature, or capability reaching GA → product-launch
-- Alliance, integration, channel/reseller deal, or joint go-to-market with a named partner → partnership
-]
-
-[Format: 2-4 sentences. Specific triggers, not vague situations.]
-
 ## Voice notes
 
 [Instructions:

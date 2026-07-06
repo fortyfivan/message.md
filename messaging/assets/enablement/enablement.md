@@ -50,8 +50,18 @@ Body keys are NOT declared here. The rendered content following the variant's St
 
 Catalog of variants this asset supports. Files live in `variants/[slug].md`.
 
-[Instructions: Populate one row per file in `variants/` when authoring — agents treat this table as the authoritative variant index]
+[Instructions: Populate one row per file in `variants/` when authoring — agents treat this table as the authoritative variant index. `Load When` is a compact trigger phrase (a few words, styled like the Pillars/Collections `Load When` columns in MESSAGE.md) that lets the agent choose the right variant file before loading it — not the 2-4 sentence prose that previously lived in each variant's `## When to use` section.
 
-| Variant | File | Description |
-|---------|------|-------------|
-|         |      |             |
+Examples for this asset:
+- battlecard — Single-page fight card for a competitor encounter
+- playbook — Step-by-step field manual for a GTM play
+- faq — Grouped Q&A arming reps with ready answers
+- message-map — One-page value-pillar cheat sheet for a theme
+- enablement-script — Timed script for an internal recording
+- talk-track — Modular cold-call script with response branches
+- discovery-guide — Discovery questions surfacing gaps and fit
+- demo-script — Prescriptive show-and-say demo choreography]
+
+| Variant | File | Description | Load When |
+|---------|------|-------------|-----------|
+|         |      |             |           |

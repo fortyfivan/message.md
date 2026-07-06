@@ -2,7 +2,7 @@
 title: ""
 description: ""
 aliases: []  # alternate names/titles that route here, e.g. "CISO", "Head of InfoSec"
-type: ""  # buyer | user | champion | blocker
+type: ""  # buyer | user | champion | detractor
 seniority: ""  # executive | director | manager | practitioner | developer
 priority: ""  # primary | secondary | tertiary
 updated: ""
