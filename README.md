@@ -30,7 +30,7 @@ This repository is the specification only with instructions to populate. [**clau
 **Runtime.** Wire the system into your agent by adding the MESSAGE.md handling block to your agent's `AGENTS.md` or `CLAUDE.md`. From there:
 
 1. MESSAGE.md loads first, as always-on foundation — attributes, glossary, brand guardrails, scenario vocabulary, and the catalogs of what else is available.
-2. For each task, the agent infers the **scenario** from the Scenarios dimensions, then progressively loads only the pillars, collections, and assets whose catalog **Load When** conditions match. Asset variants load the same way, per the `Load When` column in each asset's own `## Variants` table.
+2. For each task, the agent infers the **scenario** from the Scenarios dimensions, then progressively loads only the pillars, collections, and assets whose catalog **Load When** conditions match. The Collections catalog's **Known Entities** column carries the names of every profile, so the agent can recognize a named entity before anything else has loaded. Asset variants load the same way, per the `Load When` column in each asset's own `## Variants` table.
 
 The result is tightly scoped context assembled per task, not the entire messaging house in every prompt. Message optimized and token optimized.
 

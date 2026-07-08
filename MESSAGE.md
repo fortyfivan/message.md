@@ -123,16 +123,20 @@ Collection items are files named with lowercase-hyphenated slugs (e.g., `ciso.md
 
 Each item file's frontmatter is the source of truth for its attributes (type, tier, status, etc.); the reference tables in pillars are routing indexes derived from it. When a table and an item's frontmatter disagree, the item file wins — update the table.
 
-| Collection      | Path                                 | Description                                                        | Load When        |
-|-----------------|--------------------------------------|--------------------------------------------------------------------|------------------|
-| **Personas**    | `messaging/collections/personas/`    | Buyer role with altitude, pain points, and messaging guidance      | Named role       |
-| **Products**    | `messaging/collections/products/`    | A product, module, platform, or add-on in the portfolio            | Named product    |
-| **Competitors** | `messaging/collections/competitors/` | An alternative buyers evaluate (vendor, DIY, status quo)           | Named competitor |
-| **Segments**    | `messaging/collections/segments/`    | Industry, size, region, or maturity slice with adjusted messaging  | Named segment    |
-| **Solutions**   | `messaging/collections/solutions/`   | A use-case bundle composed of one or more products                 | Named use case   |
-| **Stories**     | `messaging/collections/stories/`     | Customer evidence — outcome, quote, and proof                      | Named customer   |
-| **Categories**  | `messaging/collections/categories/`  | Market category the company aligns with or competes in             | Category themes  |
-| **Reports**     | `messaging/collections/reports/`     | Third-party research — analyst report, market study, benchmark     | Cited research   |
+The `Known Entities` column lists the canonical name of every profile file in that collection's directory. It is the recognition vocabulary for the `Load When` trigger — this file is always loaded, so it is the only place an agent can match a name before any pillar or collection has loaded. Aliases in profile frontmatter still route alternate names to the same profile. Update the column whenever a profile is added, renamed, or removed — the same maintenance rule as the pillar routing tables.
+
+[Instructions: Populate the Known Entities cells with the canonical names of the profile files in each collection's directory, comma-separated. Keep the cells in sync as profiles are added, renamed, or removed.]
+
+| Collection      | Path                                 | Description                                                        | Known Entities                             | Load When        |
+|-----------------|--------------------------------------|--------------------------------------------------------------------|--------------------------------------------|------------------|
+| **Personas**    | `messaging/collections/personas/`    | Buyer role with altitude, pain points, and messaging guidance      | [Names of each profile in this directory]  | Named role       |
+| **Products**    | `messaging/collections/products/`    | A product, module, platform, or add-on in the portfolio            | [Names of each profile in this directory]  | Named product    |
+| **Competitors** | `messaging/collections/competitors/` | An alternative buyers evaluate (vendor, DIY, status quo)           | [Names of each profile in this directory]  | Named competitor |
+| **Segments**    | `messaging/collections/segments/`    | Industry, size, region, or maturity slice with adjusted messaging  | [Names of each profile in this directory]  | Named segment    |
+| **Solutions**   | `messaging/collections/solutions/`   | A use-case bundle composed of one or more products                 | [Names of each profile in this directory]  | Named use case   |
+| **Stories**     | `messaging/collections/stories/`     | Customer evidence — outcome, quote, and proof                      | [Names of each profile in this directory]  | Named customer   |
+| **Categories**  | `messaging/collections/categories/`  | Market category the company aligns with or competes in             | [Names of each profile in this directory]  | Category themes  |
+| **Reports**     | `messaging/collections/reports/`     | Third-party research — analyst report, market study, benchmark     | [Names of each profile in this directory]  | Cited research   |
 
 
 ---

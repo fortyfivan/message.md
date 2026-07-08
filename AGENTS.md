@@ -30,5 +30,5 @@ After MESSAGE.md, the agent loads additional content based on task context. The 
 **Default loading behavior:**
 
 - **Pillars** load per the catalog's `Load When` column — the catalog is authoritative. Profile and Pitch load always.
-- **Collections** load per the catalog's `Load When` column. Each collection loads when content references its specific entity type (personas when a named role/tier appears, competitors when a named competitor appears, etc.).
+- **Collections** load per the catalog's `Load When` column. Entity recognition is grounded in the catalog's `Known Entities` column: when content references an entity listed there (or one of its frontmatter aliases), load that profile from the collection's directory.
 - **Assets** load when generating content. Variants under the asset's `variants/` directory load per the `Load When` column in that asset's own `## Variants` table — the same mechanism as the Pillars/Collections `Load When` columns — not only when a specific variant is named.
