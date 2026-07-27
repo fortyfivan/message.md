@@ -1,5 +1,4 @@
 ---
-slug: blog-post
 status: active
 default-variant: ""
 ---
@@ -9,49 +8,45 @@ default-variant: ""
 [Instructions:
 The canonical long-form editorial format for the company.
 
-This file carries the company conventions that hold across every blog variant — length norms, CMS quirks, image cadence, frontmatter requirements. Structure and CTA conventions live in each variant under `variants/`, since both genuinely vary by editorial intent.]
+This file carries the company conventions that hold across every blog variant — length norms, naming discipline, platform quirks. Structure and CTA conventions live in each variant under `variants/`, since both genuinely vary by editorial intent.]
 
 ## Conventions
 
 [Instructions:
-Specify the company's blog-wide standards that hold across variants. Examples:
-- Length bands (e.g., 800-1,500 words standard; 1,500-2,500 anchor; 600-900 short-form)
+The company's blog-wide standards that hold across variants — only the non-obvious, company-specific norms an agent couldn't infer from good general writing. Examples:
+- Length bands by variant (e.g., 800-1,500 words standard; 1,500-2,500 anchor)
 - H1 handling (set by frontmatter vs. in body)
 - Image cadence (e.g., one image per ~400 words)
-- Quote attribution rules
-- Sign-off / author byline conventions
-- Voice and tone notes specific to blog (vs. other formats)]
+- Naming discipline (preferred terms when describing the product space)
+- Voice and tone notes specific to blog (vs. other formats)
 
-[Tips:
-- Be specific about word counts; vague guidance leads to inconsistent output
-- Note any platform-specific quirks (e.g., HubSpot character limits, WordPress excerpt fields)
-- Variant-specific length adjustments belong in the variant's Structure section, not here]
+Be specific about word counts — vague guidance leads to inconsistent output. Variant-specific length adjustments belong in the variant's Structure section, not here.]
 
-## Output schema
+## Output
+
+The deliverable is a markdown document. The body follows the selected variant's Structure section — one heading per section, in order.
 
 [Instructions:
-The structured contract for this asset's JSON output. This prose section is the home for production schema. Declare the parts that hold across every variant of this asset:
+If a downstream tool consumes this asset (the blog CMS), declare the frontmatter it needs as a literal block like the one below — one line per field, with an inline comment stating the rule. Declare only what the destination actually consumes, and note controlled vocabularies and format constraints in the comments. If nothing downstream consumes this asset, delete the block and state that the output is body-only.]
 
-- **Metadata** — the head/publishing fields the blog CMS consumes: `title`, `slug`, `excerpt`, author byline, SEO (`seo_title`, `seo_description`), and where the destination needs them `published_date` and `canonical_url`. Note controlled vocabularies (e.g., the fixed set of allowed categories) and format constraints (slug casing, ISO 8601 dates). State the destination the metadata targets (the blog CMS).
-- **Arrays** — optional repeatable groups the consumer iterates; declare the item shape, not instances. A standard post has none — `categories`/`tags` are flat metadata lists, not iterated item groups; omit unless the CMS models a repeatable block.
-
-Examples:
-- Core content: `title`, `slug`, `excerpt`, `author`, and — where the destination needs them — `published_date`, `canonical_url`
-- SEO: `seo_title`, `seo_description` (or CMS-derived from title/excerpt)
-- Controlled vocab: the fixed `categories` list; `tags`
-
-Body keys are NOT declared here. They vary by editorial intent and are defined per variant, annotated on each variant's Structure section. The envelope owns the invariant head; the variant owns the body.]
-
-[Tips:
-- Declare only what the destination actually consumes — don't mirror an exhaustive CMS field list.
-- Keep the metadata keys consistent with the `Key` column in your variant's Structure table.
-- For SEO fields, note whether the CMS derives `seo_title`/`seo_description` from title/excerpt or wants them explicit.]
+```markdown
+---
+title:            # rendered H1; not repeated in the body
+slug:             # lowercase, hyphen-delimited
+excerpt:          # 1-2 sentence teaser for listing pages
+author:           # person or team byline
+seo_title:        # may differ from title; front-load the primary keyword
+seo_description:  # search snippet
+categories: []    # controlled vocabulary — list the allowed values here
+tags: []          # free-form; reuse existing tags over near-duplicates
+---
+```
 
 ## Variants
 
-Catalog of variants this asset supports. Files live in `variants/[slug].md`.
+Catalog of variants this asset supports. Files live in `variants/[slug].md`. A variant with a sibling `variants/[slug].html` file uses it as the render template when producing HTML output; the template loads only at render time.
 
-[Instructions: Populate one row per file in `variants/` when authoring — agents treat this table as the authoritative variant index. `Load When` is a compact trigger phrase (a few words, styled like the Pillars/Collections `Load When` columns in MESSAGE.md) that lets the agent choose the right variant file before loading it — not the 2-4 sentence prose that previously lived in each variant's `## When to use` section.
+[Instructions: Populate one row per file in `variants/` — agents treat this table as the authoritative variant index. `Load When` is a compact trigger phrase (a few words, styled like the Pillars/Collections `Load When` columns in MESSAGE.md) that lets the agent choose the right variant before loading it.
 
 Examples for this asset:
 - use-case — Customer pain is acute and named

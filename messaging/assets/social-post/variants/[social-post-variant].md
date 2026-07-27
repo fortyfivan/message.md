@@ -1,6 +1,4 @@
 ---
-slug: ""
-asset: social-post
 status: active
 last-reviewed: ""
 ---
@@ -12,35 +10,28 @@ last-reviewed: ""
 ## Voice notes
 
 [Instructions:
-Variant-specific voice shifts on top of MESSAGE.md Brand Guardrails + profile.md voice attributes. What changes in this variant's register that doesn't apply to the asset overall?
+Variant-specific voice shifts on top of MESSAGE.md Brand Guardrails + profile.md voice attributes — 3-5 bullets, only what differs from the asset's base register. Platforms reward different registers — the variant's voice should sound native to its platform.
 
 Examples:
 - LinkedIn: confident-but-not-cocky; professional but human; opens with a specific scenario or claim, not a generic observation
 - Twitter/X post: tight + declarative; no hedging; one idea per tweet; humor or surprise welcome where on-brand
 - Twitter/X thread: opener carries the whole argument; each subsequent tweet adds evidence or specificity; numbering optional
-- Reddit: practitioner-voice; show your work; expect challenge — write defensively but not defensively-defensively
-]
-
-[Tips:
-- Platforms reward different registers. The variant's voice should sound native to its platform.
-- If a variant doesn't have a distinctly different voice from siblings, it probably doesn't need its own variant.]
+- Reddit: practitioner-voice; show your work; expect challenge — write defensively but not defensively-defensively]
 
 ## Structure
 
 [Instructions:
-Full section sequence (or character/word constraints) for this variant, as a single table read by both the writer and downstream production: `Guidance` is the content brief (what the section delivers or its character constraint); `Key` is the `{snake_case}` field a downstream consumer reads. Keys are stable contract — renaming one is a breaking change for downstream consumers.
+The section sequence (or character/word constraints) for this variant — one row per section, in emission order. `Guidance` is the content brief or character constraint.
 
 Example (LinkedIn):]
 
-| # | Section | Guidance | Key |
-|---|---------|----------|-----|
-| 1 | Hook | Line 1, ≤120 chars — before "see more" | `hook` |
-| 2 | Setup | Lines 2-4 | `setup` |
-| 3 | Substance | 1-3 short paragraphs | `substance` |
-| 4 | Hashtags | ≤3, at the end | `hashtags` |
-| 5 | Close | Question, takeaway, or CTA | `cta` |
-
-[Format: one row per section, in emission order. `Guidance` is prose (what/constraint); `Key` is `{snake_case}`, stable contract.]
+| Section | Guidance |
+|---------|----------|
+| Hook | Line 1, ≤120 chars — before "see more" |
+| Setup | Lines 2-4 |
+| Substance | 1-3 short paragraphs |
+| Hashtags | ≤3, at the end |
+| Close | Question, takeaway, or CTA |
 
 ## CTA conventions
 
@@ -54,17 +45,13 @@ Variant-specific CTA strategy. Social CTAs vary by platform and intent:
 Cover:
 - Whether/where the CTA lands
 - Link policy (none, one, end-only)
-- Tone of the ask (question vs. imperative)
+- Tone of the ask (question vs. imperative) — match CTA intensity to platform norms (LinkedIn tolerates more direct asks than Reddit); generic "Learn more" is dead weight on every platform
 - Whether secondary CTA is allowed]
-
-[Tips:
-- Avoid generic "Learn more" — it's dead weight on every platform
-- Match CTA intensity to platform norms (LinkedIn tolerates more direct asks than Reddit)]
 
 ## Writing checks
 
 [Instructions:
-Testable, variant-specific checks the writer must satisfy at generation time — a first writing gate on top of the global voice gate. Capture platform/format-specific tells the global voice gate doesn't already catch; don't restate global banned phrases or Brand Guardrails. Each check must be observable, not vague.
+Testable, variant-specific checks the writer must satisfy at generation time — a first writing gate on top of the global voice gate. Capture platform/format-specific tells the global voice gate doesn't already catch; don't restate global banned phrases or Brand Guardrails. Each check must be observable, not vague. Omit this section if the variant has no tells beyond the global voice gate.
 
 Examples (LinkedIn):
 - No engagement-bait closers ("Agree?", "Thoughts?", "Who else has seen this?")
@@ -74,10 +61,7 @@ Examples (LinkedIn):
 
 Examples (Twitter/X post):
 - Single idea; no thread-bait ("a 🧵") on a standalone post
-- No hashtag stuffing (0–1 hashtag, not 3+)
-]
-
-[Format: testable bullet rules. Omit this section if the variant has no tells beyond the global voice gate.]
+- No hashtag stuffing (0–1 hashtag, not 3+)]
 
 ## Examples
 

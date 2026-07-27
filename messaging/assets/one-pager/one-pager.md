@@ -1,5 +1,4 @@
 ---
-slug: one-pager
 status: active
 default-variant: ""
 ---
@@ -7,7 +6,7 @@ default-variant: ""
 # One-Pager
 
 [Instructions:
-Single-page leave-behind reference asset. Used for sales pitches, competitive battlecards, product datasheets, partner overviews, executive briefs — anything that must fit on one printed page and be self-contained enough for a champion to forward without explanation. 
+Single-page leave-behind reference asset. Used for sales pitches, competitive battlecards, product datasheets, partner overviews, executive briefs — anything that must fit on one printed page and be self-contained enough for a champion to forward without explanation.
 
 This file carries the company conventions that hold across every one-pager variant — page-cap discipline, design system constraints, persona-specific rule, brand styling. Structure and CTA conventions live in each variant under `variants/` since they vary significantly by editorial intent (a sales pitch leads with pain; a datasheet leads with capability tables; a battlecard leads with competitive contrast).]
 
@@ -15,37 +14,33 @@ This file carries the company conventions that hold across every one-pager varia
 
 [Instructions:
 Specify the company's one-pager-wide standards that hold across variants:
-- Hard page cap (e.g., must fit one printed page — typically ≤400 words; design templates enforce)
+- Hard page cap (e.g., must fit one printed page — typically ≤400 words; design templates enforce; note any field length caps the template enforces)
 - Design system / PDF generation tool (Figma → PDF, Notion, custom designer, etc.) — name the canonical template
 - Persona-bound rule: one persona per one-pager; multi-persona pages dilute
 - Champion-forwardable rule: a director receives this and can forward to their CISO without explaining
 - Brand styling constraints (color tokens, logo placement, footer)
 - File naming convention for the rendered PDF]
 
-## Output schema
+## Output
+
+The deliverable is a markdown document. The body follows the selected variant's Structure section — one heading per section, in order, sized to fit the one-page cap.
 
 [Instructions:
-The structured contract for this asset's JSON output. This prose section is the home for production schema. Declare the parts that hold across every variant of this asset:
+Declare the frontmatter the design system / PDF generator consumes as a literal block like the one below — one line per field, with an inline comment stating the rule. A variant may note additional fields only it needs (e.g., a battlecard's `competitor`) in its own file. If nothing downstream consumes this asset, delete the block and state that the output is body-only.]
 
-- **Metadata** — the design/render head: `title`, `template_id` (Figma component or PDF generator template), `page_size` (Letter, A4), `brand_theme` (light, dark, partner co-brand), `output_format` (PDF, web, both). State the destination the metadata targets (the design system / PDF generator — no CMS by default).
-- **Arrays** — optional repeatable groups the consumer iterates; declare the item shape, not instances. None by default — variant-specific groups (a datasheet's `spec_table` rows, a battlecard's objection list) are declared on the relevant variant.
-
-Examples:
-- `template_id` (Figma component or PDF generator template), `page_size` (Letter, A4), `brand_theme` (light, dark, partner co-brand), `output_format` (PDF, web, both)
-- Variant-specific: a battlecard's `competitor_name`, a datasheet's `spec_table`
-
-Body keys are NOT declared here. They vary by editorial intent and are defined per variant, annotated on each variant's Structure section. The envelope owns the invariant head; the variant owns the body.]
-
-[Tips:
-- Declare only what the renderer actually consumes — don't mirror an exhaustive field list.
-- Keep the metadata keys consistent with the `Key` column in your variant's Structure table.
-- This renders to a fixed single page — note any field length caps the template enforces.]
+```markdown
+---
+title:        # at the persona's altitude
+template_id:  # the canonical design template (Figma component, PDF generator)
+brand_theme:  # light / dark / partner co-brand
+---
+```
 
 ## Variants
 
-Catalog of variants this asset supports. Files live in `variants/[slug].md`.
+Catalog of variants this asset supports. Files live in `variants/[slug].md`. A variant with a sibling `variants/[slug].html` file uses it as the render template when producing HTML output; the template loads only at render time.
 
-[Instructions: Populate one row per file in `variants/` when authoring — agents treat this table as the authoritative variant index. `Load When` is a compact trigger phrase (a few words, styled like the Pillars/Collections `Load When` columns in MESSAGE.md) that lets the agent choose the right variant file before loading it — not the 2-4 sentence prose that previously lived in each variant's `## When to use` section.
+[Instructions: Populate one row per file in `variants/` — agents treat this table as the authoritative variant index. `Load When` is a compact trigger phrase (a few words, styled like the Pillars/Collections `Load When` columns in MESSAGE.md) that lets the agent choose the right variant before loading it.
 
 Examples for this asset:
 - sales — Champion needs an internal pitch leave-behind

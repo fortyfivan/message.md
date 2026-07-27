@@ -1,5 +1,4 @@
 ---
-slug: landing-page
 status: active
 default-variant: ""
 ---
@@ -7,9 +6,9 @@ default-variant: ""
 # Landing Page
 
 [Instructions:
-Single-purpose conversion page used for campaign destinations, product pages, gated assets, webinar registrations, event pages, partner co-marketing pages — anything that turns intent into a single conversion action. 
+Single-purpose conversion page used for campaign destinations, product pages, gated assets, webinar registrations, event pages, partner co-marketing pages — anything that turns intent into a single conversion action.
 
-This file carries the company conventions that hold across every landing-page variant — word count caps, hero headline derivation, CMS section structure. Structure and CTA conventions live in each variant under `variants/` since they vary by editorial intent (a product page leads with capability; a webinar landing page leads with date/speaker; an event page leads with format/location; a gated asset leads with the offer).]
+This file carries the company conventions that hold across every landing-page variant — word count caps, hero headline derivation, single-goal discipline. Structure and CTA conventions live in each variant under `variants/` since they vary by editorial intent (a product page leads with capability; a webinar landing page leads with date/speaker; an event page leads with format/location; a gated asset leads with the offer).]
 
 ## Conventions
 
@@ -22,32 +21,27 @@ Specify the company's landing-page standards that hold across variants:
 - Hero headline derivation rule (from the persona's altitude)
 - Image / video usage norms]
 
-## Output schema
+## Output
+
+The deliverable is a markdown document. The body follows the selected variant's Structure section — one heading per page section, in order.
 
 [Instructions:
-The structured contract for this asset's JSON output. This prose section is the home for production schema. Declare the parts that hold across every variant of this asset:
+If a downstream tool consumes this asset (the marketing-site CMS), declare the frontmatter it needs as a literal block like the one below — one line per field, with an inline comment stating the rule. A variant may note additional fields only it needs (e.g., a webinar's `event_date` and speaker list; a gated asset's `asset_download_url`) in its own file. If nothing downstream consumes this asset, delete the block and state that the output is body-only.]
 
-- **Metadata** — the page head the CMS consumes: page `title`, `og_image_url`, and `form_id` for gated pages. Note format constraints and ISO 8601 dates. State the destination the metadata targets (the marketing-site CMS).
-- **Arrays** — optional repeatable groups the consumer iterates; declare the item shape, not instances. `sections` is the ordered group of block objects (`{type, heading, body, image_url, …}`) where the CMS renders structured sections; the variant's Structure defines the block sequence (for flat-HTML CMSs the body collapses to a single body key, declared per variant). Variant-specific groups (a webinar's `speakers`/`agenda`, a product page's `feature_list`) are declared on the relevant variant.
-
-Examples:
-- Any variant: `og_image_url`, `form_id`, `pardot_form_handler_url`, `marketo_form_id`
-- Webinar / event: `event_date`, `event_time`, `event_duration`, `speakers` (array), `agenda` (array), `registration_cta_url`, `on_demand_cta_url`, webinar-platform fields (Zoom, ON24, Demio)
-- Gated-asset: `asset_download_url`, `gated_form_id`
-- Product-page: `product_slug`, `feature_list` (array)
-
-Body keys are NOT declared here. They vary by editorial intent and are defined per variant, annotated on each variant's Structure section. The envelope owns the invariant head; the variant owns the body.]
-
-[Tips:
-- Declare only what the destination actually consumes — don't mirror an exhaustive CMS field list.
-- Keep the metadata keys consistent with the `Key` column in your variant's Structure table.
-- For SEO/OG fields, note whether the CMS derives meta from the title or wants `og_image_url`/meta explicit.]
+```markdown
+---
+title:         # page title; hero headline lives in the body
+seo_title:     # front-load the primary keyword
+og_image_url:  # social share image
+form_id:       # gated pages only; the marketing-automation form
+---
+```
 
 ## Variants
 
-Catalog of variants this asset supports. Files live in `variants/[slug].md`.
+Catalog of variants this asset supports. Files live in `variants/[slug].md`. A variant with a sibling `variants/[slug].html` file uses it as the render template when producing HTML output; the template loads only at render time.
 
-[Instructions: Populate one row per file in `variants/` when authoring — agents treat this table as the authoritative variant index. `Load When` is a compact trigger phrase (a few words, styled like the Pillars/Collections `Load When` columns in MESSAGE.md) that lets the agent choose the right variant file before loading it — not the 2-4 sentence prose that previously lived in each variant's `## When to use` section.
+[Instructions: Populate one row per file in `variants/` — agents treat this table as the authoritative variant index. `Load When` is a compact trigger phrase (a few words, styled like the Pillars/Collections `Load When` columns in MESSAGE.md) that lets the agent choose the right variant before loading it.
 
 Examples for this asset:
 - campaign-destination — Campaign traffic, single offer

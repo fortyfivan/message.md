@@ -1,46 +1,36 @@
 ---
-slug: ""
-asset: blog-post
 status: active
 last-reviewed: ""
 ---
 
 # [Instructions: Variant name, e.g. "Use case" or "Thought leadership"]
 
-[Instructions: One-line description of this variant — what makes it different from siblings in the same asset's `variants/` directory.]
+[Instructions: One-line description of this variant — what makes it different from siblings in this asset's `variants/` directory.]
 
 ## Voice notes
 
 [Instructions:
-Variant-specific voice shifts on top of MESSAGE.md Brand Guardrails + profile.md voice attributes. What changes in this variant's register that doesn't apply to the asset overall?
+Variant-specific voice shifts on top of MESSAGE.md Brand Guardrails + profile.md voice attributes — 3-5 bullets, only what differs from the asset's base register. Voice anchors, not a full style guide. If a variant has no distinct voice, it probably shouldn't be its own variant.
 
 Examples:
 - Use-case: operator first-person framing, concrete metrics in every section, customer quote as proof anchor
 - Thought-leadership: executive-altitude, contrarian thesis up front, no product mention until final section
-- Product-announcement: declarative + benefits-led, hero claim in lede, link to docs/changelog at the end
-]
-
-[Tips:
-- Keep this short (3-5 bullets). Voice anchors, not full style guide.
-- Only specify what's different from the asset's base register.
-- If a variant doesn't have distinct voice, it probably shouldn't be its own variant.]
+- Product-announcement: declarative + benefits-led, hero claim in lede, link to docs/changelog at the end]
 
 ## Structure
 
 [Instructions:
-Full section sequence for this variant, as a single table read by both the writer and downstream production: `Guidance` is the content brief (what the section delivers, approximate length where it matters); `Key` is the `{snake_case}` field a downstream consumer reads. Keys are stable contract — renaming one is a breaking change for downstream consumers.
+The section sequence for this variant — one row per section, in emission order. `Guidance` is the content brief: what the section delivers, with approximate length where it matters. State the variant's overall length band in a line below the table.
 
 Example (product-announcement):]
 
-| # | Section | Guidance | Key |
-|---|---------|----------|-----|
-| 1 | Hero claim | Stated in the lede | `lede` |
-| 2 | What's new | — | `whats_new` |
-| 3 | Why it matters | Significance to the reader | `significance` |
-| 4 | How to access | Docs/changelog link | `access` |
-| 5 | Closing CTA | The single next step | `cta` |
-
-[Format: one row per section, in emission order. `Guidance` is prose (what/length); `Key` is `{snake_case}`, stable contract.]
+| Section | Guidance |
+|---------|----------|
+| Hero claim | Stated in the lede |
+| What's new | — |
+| Why it matters | Significance to the reader |
+| How to access | Docs/changelog link |
+| Closing CTA | The single next step |
 
 ## CTA conventions
 
@@ -49,29 +39,22 @@ Variant-specific CTA strategy — placement, link destination, button voice. CTA
 
 Cover:
 - Where the CTA lands (inline at natural break vs. closing card vs. both)
-- What it links to (specific destination type, e.g., demo calendar, gated guide, related post)
-- Button/link text pattern (e.g., "See how [persona] does X" vs. generic "Learn more")
-- Whether to include secondary CTA (e.g., "Or read the related guide")
-]
+- What it links to (specific destination type — "Schedule a 15-min walkthrough" beats "Schedule a demo")
+- Whether to include a secondary CTA (e.g., "Or read the related guide")
 
-[Tips:
-- Specific destinations beat generic. "Schedule a 15-min walkthrough" beats "Schedule a demo."
-- Match CTA to the variant's persona altitude — executive content gets exec-friendly CTAs (peer reference, analyst report), operator content gets operator CTAs (interactive demo, docs).]
+Match CTA to the variant's persona altitude — executive content gets exec-friendly CTAs (peer reference, analyst report), operator content gets operator CTAs (interactive demo, docs).]
 
 ## Writing checks
 
 [Instructions:
-Testable, variant-specific checks the writer must satisfy at generation time — a first writing gate on top of the global voice gate. Capture format-specific tells the global voice gate doesn't already catch; don't restate global banned phrases or Brand Guardrails. Each check must be observable, not vague.
+Testable, variant-specific checks the writer must satisfy at generation time — a first writing gate on top of the global voice gate. Capture format-specific tells the global voice gate doesn't already catch; don't restate global banned phrases or Brand Guardrails. Each check must be observable, not vague. Omit this section if the variant has no tells beyond the global voice gate.
 
 Examples (blog):
 - No "in today's fast-paced / ever-evolving world" scene-setting openers
 - No empty hedges ("it's important to note", "it's worth noting")
 - No "In conclusion / In summary" closer that just restates the intro
 - No listicle padding — every section earns its place with a distinct point
-- Opening paragraph makes a claim, not a definition of the topic
-]
-
-[Format: testable bullet rules. Omit this section if the variant has no tells beyond the global voice gate.]
+- Opening paragraph makes a claim, not a definition of the topic]
 
 ## Examples
 

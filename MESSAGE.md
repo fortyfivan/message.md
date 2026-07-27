@@ -46,18 +46,11 @@ last-reviewed: "[Instructions: ISO date, YYYY-MM-DD.]"
 
 [Instructions: Flat list of terms with usage rules. Include:
 - Company specific terminology
+- Product naming conventions
 - Named technical components and terms
 - Industry abbreviations with usage rules
 
-
-Do NOT include:
-- Product names → `collections/products/`
-- Competitor names → `collections/competitors/`
-- Customer names → `collections/stories/`
-- Persona role titles → `collections/personas/`
-- Category names → `collections/categories/`
-
-Aim for 10-20 entries. More than 30 usually means the glossary is duplicating content that lives elsewhere.]
+Aim for 10-20 entries at most. More than 30 usually means the glossary is duplicating content that lives elsewhere (i.e. collection profiles).]
 
 - **[Instructions: Term]** — [Instructions: Usage rule or replacement.]
 
@@ -67,7 +60,7 @@ Aim for 10-20 entries. More than 30 usually means the glossary is duplicating co
 
 *Absolute constraints that apply to every output. These are hard gates, not style preferences.*
 
-[Instructions: List the constraints that no generated content may violate — banned phrases and claims, legal and compliance rules, trademark and naming rules, things never said about competitors or customers. Keep to 5-15 entries. Style and voice preferences belong in `pillars/profile.md`; only absolutes live here.]
+[Instructions: List the constraints that no generated content may violate — banned phrases and claims, legal and compliance rules, trademark and naming rules, things never said about competitors or customers. Keep to 5-15 entries.]
 
 [Format:
 - **[Guardrail]** — [The rule, stated as a testable constraint, with the replacement or correct behavior where one exists.]]
@@ -78,25 +71,14 @@ Aim for 10-20 entries. More than 30 usually means the glossary is duplicating co
 
 *Vocabulary for runtime messaging assembly. Agents infer the scenario of each session by combining dimensional values, and use them to set altitude for each task.*
 
-### Dimensions
+[Instructions: Customize the values for each dimension. Values are descriptive vocabulary — how each dimension shapes loading and posture is defined once in the agent instruction block (`CLAUDE.md`/`AGENTS.md`), not authored per value.]
 
 | Dimension        | Values                                                                                                                        |
 |------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| Compelling event | [Instructions: Customize. Common values: analyst-report, competitor-news, customer-win, market-event, etc.]                   |
-| Market moment    | [Instructions: Customize. Common values: category-disruption, regulatory-shift, consolidation, etc.]                          |
-| Strategic shape  | [Instructions: Customize. Common values: new-product-introduction, strategic-event, brand-campaign, thought-leadership, etc.] |
+| Compelling event | [Instructions: Customize. Common values: Analyst Report, Competitor News, Customer Win, Market Event, etc.]                   |
+| Market moment    | [Instructions: Customize. Common values: Category Disruption, Regulatory Shift, Consolidation, etc.]                          |
+| Strategic shape  | [Instructions: Customize. Common values: New Product Introduction, Strategic Event, Brand Campaign, Thought Leadership, etc.] |
 | Content lens     | [Instructions: Customize. Common values: Awareness, Acquisition, Activation, Adoption, Advocacy, Amplification]               |
-
-### Assembly Guidance
-
-[Instructions: Make each dimension operational by declaring its assembly effect — what a value changes about what gets loaded or how content is postured. One row per value that changes agent behavior; a value with no assembly effect is descriptive only and should be cut from Dimensions. The rows below are examples — replace with your values.]
-
-| Dimension        | Value                     | Assembly effect                                                                        |
-|------------------|---------------------------|----------------------------------------------------------------------------------------|
-| Compelling event | competitor-news           | Load the named competitor profile; contrast posture grounded in Pitch differentiators  |
-| Market moment    | regulatory-shift          | Load affected segment profiles; lead with urgency and compliance framing               |
-| Strategic shape  | new-product-introduction  | Emphasize Portfolio and product profiles; Position for category framing                |
-| Content lens     | Awareness                 | Category-narrative altitude; minimize product specifics; soft CTA                      |
 
 ---
 
@@ -104,14 +86,14 @@ Aim for 10-20 entries. More than 30 usually means the glossary is duplicating co
 
 *Top-level elements that cover the company's full positioning and messaging domain.*
 
-| Pillar        | File                             | Description                                        | Load When                                                     |
-|---------------|----------------------------------|----------------------------------------------------|---------------------------------------------------------------|
-| **Profile**   | `messaging/pillars/profile.md`   | Key statements and brand voice.                    | Always                                                        |
-| **Pitch**     | `messaging/pillars/pitch.md`     | Strategic narrative, UVPs, and differentiators     | Always                                                        |
-| **Position**  | `messaging/pillars/position.md`  | Market landscape, category claims, and positioning | Marketing content (default); competitive or category framing  |
-| **People**    | `messaging/pillars/people.md`    | Audience framing and relevant messages             | Marketing content (default); writing for a specific audience  |
-| **Portfolio** | `messaging/pillars/portfolio.md` | Product overview and capabilities                  | References to specific products                               |
-| **Proof**     | `messaging/pillars/proof.md`     | Customer wins, analyst recognition                 | Marketing content (default); backing claims with evidence     |
+| Pillar        | File                             | Description                                        | Load When                        |
+|---------------|----------------------------------|----------------------------------------------------|----------------------------------|
+| **Profile**   | `messaging/pillars/profile.md`   | Key statements and brand voice.                    | Always                           |
+| **Pitch**     | `messaging/pillars/pitch.md`     | Strategic narrative, UVPs, and differentiators     | Always                           |
+| **Position**  | `messaging/pillars/position.md`  | Market landscape, category claims, and positioning | Competitive or category framing  |
+| **People**    | `messaging/pillars/people.md`    | Audience framing and relevant messages             | Writing for a specific audience  |
+| **Portfolio** | `messaging/pillars/portfolio.md` | Product overview and capabilities                  | References to specific products  |
+| **Proof**     | `messaging/pillars/proof.md`     | Customer wins, analyst recognition                 | Backing claims with evidence     |
 
 ---
 

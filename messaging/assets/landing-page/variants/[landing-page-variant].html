@@ -1,0 +1,31 @@
+<!--
+[Instructions:
+Optional HTML render template for a variant. Any variant of any asset may ship one
+as a sibling file — `variants/[slug].html` next to `variants/[slug].md`. Its presence
+is the signal: when the task produces HTML output for that variant, load this file at
+render time and fill it; otherwise it stays unloaded.
+
+The template is a real mockup, not a schema. Layout, classes, and boilerplate are
+preserved verbatim in the rendered output — only the {{placeholders}} are replaced:
+- {{field}} — a frontmatter field from the asset's Output section (e.g., {{title}}, {{form_id}})
+- {{section-name}} — the slugified name of a section from the variant's Structure table
+  (e.g., "CTA repeat" → {{cta-repeat}}); replaced with that section's rendered content
+
+The template is the sole render contract — don't re-declare its slots anywhere else.
+A placeholder inside an element replaces its content; keep surrounding markup exactly
+as the destination expects it. Replace this example with the variant's real page
+skeleton (or a designer-supplied mockup — richer is better).]
+-->
+<main class="landing-page">
+  <section class="hero">
+    <h1>{{hero}}</h1>
+  </section>
+  <section class="problem">{{problem}}</section>
+  <section class="solution">{{solution}}</section>
+  <section class="differentiators">{{differentiators}}</section>
+  <section class="proof">{{proof}}</section>
+  <section class="cta">
+    {{cta-repeat}}
+    <form data-form-id="{{form_id}}"></form>
+  </section>
+</main>
