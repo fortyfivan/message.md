@@ -101,12 +101,6 @@ Aim for 10-20 entries at most. More than 30 usually means the glossary is duplic
 
 *Individual profiles loaded on-demand for focus and relevance.*
 
-Collection items are files named with lowercase-hyphenated slugs (e.g., `ciso.md`, `acme-corp.md`); cross-reference tables point to them by repo-relative path (e.g., `messaging/collections/personas/ciso.md`). Each item's frontmatter `aliases` list carries the alternate names that should route to it.
-
-Each item file's frontmatter is the source of truth for its attributes (type, tier, status, etc.); the reference tables in pillars are routing indexes derived from it. When a table and an item's frontmatter disagree, the item file wins — update the table.
-
-The `Known Entities` column lists the canonical name of every profile file in that collection's directory. It is the recognition vocabulary for the `Load When` trigger — this file is always loaded, so it is the only place an agent can match a name before any pillar or collection has loaded. Aliases in profile frontmatter still route alternate names to the same profile. Update the column whenever a profile is added, renamed, or removed — the same maintenance rule as the pillar routing tables.
-
 [Instructions: Populate the Known Entities cells with the canonical names of the profile files in each collection's directory, comma-separated. Keep the cells in sync as profiles are added, renamed, or removed.]
 
 | Collection      | Path                                 | Description                                                        | Known Entities                             | Load When        |
@@ -142,8 +136,3 @@ The `Known Entities` column lists the canonical name of every profile file in th
 | **Web Copy**       | `messaging/assets/web-copy/`       | [All variants in the respective `variants/` directory]  |
 | **Slide Deck**     | `messaging/assets/slide-deck/`     | [All variants in the respective `variants/` directory]  |
 | **Enablement**     | `messaging/assets/enablement/`     | [All variants in the respective `variants/` directory]  |
-
-
----
-
-*Progressive loading rules for pillars, collections, and assets are defined in `CLAUDE.md`.*
