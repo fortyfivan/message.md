@@ -39,7 +39,7 @@ form_id:       # gated pages only; the marketing-automation form
 
 ## Variants
 
-Catalog of variants this asset supports. Files live in `variants/[slug].md`. A variant with a sibling `variants/[slug].html` file uses it as the render template when producing HTML output; the template loads only at render time.
+Catalog of variants this asset supports. Files live in `variants/[slug].md`. 
 
 [Instructions: Populate one row per file in `variants/` — agents treat this table as the authoritative variant index. `Load When` is a compact trigger phrase (a few words, styled like the Pillars/Collections `Load When` columns in MESSAGE.md) that lets the agent choose the right variant before loading it.
 
